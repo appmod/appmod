@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/getadvicescreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smu.appmod.GetAdvice">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:id="@+id/lay">
+
+        <ImageView
+            android:id="@+id/app"
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="right"
+            android:src="@drawable/app"
+            />
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/arrow"
+            />
+        <ImageView
+            android:id="@+id/danger"
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/phone"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <View
+        android:id="@+id/helper"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="156dp"
+        android:background="#CC0000" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@id/helper"
+        android:background="#AEC6CF"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/getadvice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#08457E"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="@string/getadvice"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/ownaction"
+            android:layout_width="match_parent"
+            android:text="@string/dontfollow"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#08457E"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

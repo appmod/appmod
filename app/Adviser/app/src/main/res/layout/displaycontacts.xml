@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageDependants">
+
+    <FrameLayout
+        android:id="@+id/frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#08457E">
+
+        <EditText
+            android:id="@+id/searchView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#08457E"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:hint="@string/search"
+            android:padding="6dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8AFFFFFF"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:windowSoftInputMode="stateHidden"></EditText>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/contacts_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag"></ListView>
+
+    <View
+        android:id="@+id/helper"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:background="#CC0000" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@id/frag"
+        android:background="#AEC6CF"
+        android:gravity="bottom"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/dialogButtonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#08457E"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/dialogButtonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#08457E"
+            android:gravity="center"
+            android:text="@string/add"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>

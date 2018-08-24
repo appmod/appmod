@@ -1,0 +1,1039 @@
+
+
+
+
+2018-06-16 14:16:56
+
+0 results
+
+
+
+
+2018-06-16 14:18:15
+{"registration_ids":["eAYESBBbtvI:APA91bGIaQKXLFjwA_ZZuLRbwmwBOYZ-Ndb45PRqOCYnnPdqxWeZmhc2Dfu13B8gY9pzp1OOxUiyh-5K9nkrqLVchlYZPA-SpPg-M9z-sgC7BwGmvfJxSKSHKAiboGXo2Rac2KBXtBmx"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":8316385450184240051,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529129892559277%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-18 08:00:01
+{"registration_ids":["eDgb-NQj9Rs:APA91bE8JQBdVKwxFIAb1JzccQL6rlYltVXbDk_PkF1Pxs3OGS2tin0em1uyr4b6NgXakJyNvj47NFnawVFxg2-fsPnFzqa_oVl-Z0yzzgs4IPIzC66yEWbwjgv9eOXlIWiT80qpR6uo"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":5124847651221629653,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529280000724922%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-18 09:00:01
+{"registration_ids":["eDgb-NQj9Rs:APA91bE8JQBdVKwxFIAb1JzccQL6rlYltVXbDk_PkF1Pxs3OGS2tin0em1uyr4b6NgXakJyNvj47NFnawVFxg2-fsPnFzqa_oVl-Z0yzzgs4IPIzC66yEWbwjgv9eOXlIWiT80qpR6uo"],"data":{"default":"Gmail is accessing the camera of your device."}}{"multicast_id":6530086429664367148,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529283601140648%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-18 10:00:01
+{"registration_ids":["eDgb-NQj9Rs:APA91bE8JQBdVKwxFIAb1JzccQL6rlYltVXbDk_PkF1Pxs3OGS2tin0em1uyr4b6NgXakJyNvj47NFnawVFxg2-fsPnFzqa_oVl-Z0yzzgs4IPIzC66yEWbwjgv9eOXlIWiT80qpR6uo"],"data":{"default":"Instagram is modifying your calendar events."}}{"multicast_id":8109425939514560786,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529287200513312%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-18 11:00:01
+{"registration_ids":["eDgb-NQj9Rs:APA91bE8JQBdVKwxFIAb1JzccQL6rlYltVXbDk_PkF1Pxs3OGS2tin0em1uyr4b6NgXakJyNvj47NFnawVFxg2-fsPnFzqa_oVl-Z0yzzgs4IPIzC66yEWbwjgv9eOXlIWiT80qpR6uo"],"data":{"default":"Gmail is accessing the camera of your device."}}{"multicast_id":6228717433373520609,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529290800885812%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-18 12:00:01
+{"registration_ids":["eDgb-NQj9Rs:APA91bE8JQBdVKwxFIAb1JzccQL6rlYltVXbDk_PkF1Pxs3OGS2tin0em1uyr4b6NgXakJyNvj47NFnawVFxg2-fsPnFzqa_oVl-Z0yzzgs4IPIzC66yEWbwjgv9eOXlIWiT80qpR6uo"],"data":{"default":"YouTube is making phone calls from your device."}}{"multicast_id":5620662029957009410,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529294401238252%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-18 13:00:01
+{"registration_ids":["eDgb-NQj9Rs:APA91bE8JQBdVKwxFIAb1JzccQL6rlYltVXbDk_PkF1Pxs3OGS2tin0em1uyr4b6NgXakJyNvj47NFnawVFxg2-fsPnFzqa_oVl-Z0yzzgs4IPIzC66yEWbwjgv9eOXlIWiT80qpR6uo"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":4687018007831548064,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529298000610816%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-18 14:00:01
+{"registration_ids":["eDgb-NQj9Rs:APA91bE8JQBdVKwxFIAb1JzccQL6rlYltVXbDk_PkF1Pxs3OGS2tin0em1uyr4b6NgXakJyNvj47NFnawVFxg2-fsPnFzqa_oVl-Z0yzzgs4IPIzC66yEWbwjgv9eOXlIWiT80qpR6uo"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":7678081676342686185,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529301600969810%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-18 15:00:01
+{"registration_ids":["eDgb-NQj9Rs:APA91bE8JQBdVKwxFIAb1JzccQL6rlYltVXbDk_PkF1Pxs3OGS2tin0em1uyr4b6NgXakJyNvj47NFnawVFxg2-fsPnFzqa_oVl-Z0yzzgs4IPIzC66yEWbwjgv9eOXlIWiT80qpR6uo"],"data":{"default":"Instagram is modifying your calendar events."}}{"multicast_id":7786246682564541496,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+
+
+2018-06-18 16:00:01
+{"registration_ids":["eDgb-NQj9Rs:APA91bE8JQBdVKwxFIAb1JzccQL6rlYltVXbDk_PkF1Pxs3OGS2tin0em1uyr4b6NgXakJyNvj47NFnawVFxg2-fsPnFzqa_oVl-Z0yzzgs4IPIzC66yEWbwjgv9eOXlIWiT80qpR6uo"],"data":{"default":"Whatsapp is sending your calendar events to an unknown server."}}{"multicast_id":4715717691814079879,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+
+
+2018-06-18 17:00:01
+
+0 results
+
+
+
+
+2018-06-18 18:00:01
+
+0 results
+
+
+
+
+2018-06-19 08:00:01
+
+0 results
+
+
+
+
+2018-06-19 09:00:01
+
+0 results
+
+
+
+
+2018-06-19 10:00:01
+
+0 results
+
+
+
+
+2018-06-19 11:00:01
+
+0 results
+
+
+
+
+2018-06-19 12:00:01
+
+0 results
+
+
+
+
+2018-06-19 13:00:01
+
+0 results
+
+
+
+
+2018-06-19 14:00:01
+{"registration_ids":["cztoAfLt88M:APA91bGadBrzwVCn5CbA4dSUKErW_d5i6YlqeTT1mAvB458ynkI-z2bCEjRBdOsDAH8b-C-UQIW4J6URdtMHVC_7hGXz_b9rBE4k-soHq5are0r__Eimw1dcmyZCPFuSWPCD1x6TNorMs3IVC8UF8Zcqc4_212yyCQ"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":7209956284098051080,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529388002426226%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-19 15:00:01
+
+0 results
+
+
+
+
+2018-06-19 16:00:01
+{"registration_ids":["f-FoEHEAnjo:APA91bGHvyeG-yWofbE5FAuOfl3JF0Ls4Eh0fM_oYF6gIHilQUcaz6N1UNehQjx4WG2LvjU37Z0VRdf8brl6G3Y97qmMmOWtfRq5yFzlAi_lwHhRq4pM_V8AS7RQmQHlm5NZUnipA2SFl8QzO0EtcUHZmBwiM7LkEA"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":5610282600830842787,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529395201995214%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-19 17:00:01
+{"registration_ids":["f-FoEHEAnjo:APA91bGHvyeG-yWofbE5FAuOfl3JF0Ls4Eh0fM_oYF6gIHilQUcaz6N1UNehQjx4WG2LvjU37Z0VRdf8brl6G3Y97qmMmOWtfRq5yFzlAi_lwHhRq4pM_V8AS7RQmQHlm5NZUnipA2SFl8QzO0EtcUHZmBwiM7LkEA"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":8944714260887241749,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529398802368295%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-19 18:00:01
+{"registration_ids":["f-FoEHEAnjo:APA91bGHvyeG-yWofbE5FAuOfl3JF0Ls4Eh0fM_oYF6gIHilQUcaz6N1UNehQjx4WG2LvjU37Z0VRdf8brl6G3Y97qmMmOWtfRq5yFzlAi_lwHhRq4pM_V8AS7RQmQHlm5NZUnipA2SFl8QzO0EtcUHZmBwiM7LkEA"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":9219607193903667453,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529402402735851%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-20 08:00:02
+{"registration_ids":["f-FoEHEAnjo:APA91bGHvyeG-yWofbE5FAuOfl3JF0Ls4Eh0fM_oYF6gIHilQUcaz6N1UNehQjx4WG2LvjU37Z0VRdf8brl6G3Y97qmMmOWtfRq5yFzlAi_lwHhRq4pM_V8AS7RQmQHlm5NZUnipA2SFl8QzO0EtcUHZmBwiM7LkEA"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":5912363072620416646,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529452803522738%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-20 09:00:01
+{"registration_ids":["f-FoEHEAnjo:APA91bGHvyeG-yWofbE5FAuOfl3JF0Ls4Eh0fM_oYF6gIHilQUcaz6N1UNehQjx4WG2LvjU37Z0VRdf8brl6G3Y97qmMmOWtfRq5yFzlAi_lwHhRq4pM_V8AS7RQmQHlm5NZUnipA2SFl8QzO0EtcUHZmBwiM7LkEA"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":8474390355000780502,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529456402946954%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-20 10:00:01
+{"registration_ids":["f-FoEHEAnjo:APA91bGHvyeG-yWofbE5FAuOfl3JF0Ls4Eh0fM_oYF6gIHilQUcaz6N1UNehQjx4WG2LvjU37Z0VRdf8brl6G3Y97qmMmOWtfRq5yFzlAi_lwHhRq4pM_V8AS7RQmQHlm5NZUnipA2SFl8QzO0EtcUHZmBwiM7LkEA"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":8173135049855170224,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529460003306995%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-20 11:00:01
+{"registration_ids":["fkC4Q83AfHk:APA91bHKhhfs9hundJLBKlrovONWtYY7L4W0DUEXiho7TQ-v0WUJ8yA0fXVAtPEvjwJN5q5i39M3mAsgk-RdYIlYxAXqxFXAz1jOFpMN6Hd9S60Bfzj5gjTqmmtnxhKJDl3D7SIwqqX_xSK8y3aLY9sFIC_bKLRmVA"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":6285384678658159616,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529463602675121%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-20 12:00:01
+{"registration_ids":["fkC4Q83AfHk:APA91bHKhhfs9hundJLBKlrovONWtYY7L4W0DUEXiho7TQ-v0WUJ8yA0fXVAtPEvjwJN5q5i39M3mAsgk-RdYIlYxAXqxFXAz1jOFpMN6Hd9S60Bfzj5gjTqmmtnxhKJDl3D7SIwqqX_xSK8y3aLY9sFIC_bKLRmVA"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":7875188624210389218,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529467203048007%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-20 13:00:01
+
+0 results
+
+
+
+
+2018-06-20 14:00:01
+{"registration_ids":["e3VHDjF_dMM:APA91bGs7GZ2dbloBje0TKwaw5cHGB-3Y2VGc0gFiEyPubmaeq3fBQUy5wxDWWZecUH5AkbAqHRchXOOTVnJdIcjXgxlhz4swyn3jPj-nxyfugnZ3-4nOsanJMOlXHR8K8YdOvPB9oWtFiZGM8oKhqdl-tYg7sruRQ"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":5029951757867005182,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529474403680916%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-20 15:00:01
+{"registration_ids":["fy3ai_4PR6M:APA91bEaR5GTxDeejFollcVp09aNB1QRcEOeStdFXzGX3VCC1n9kqvF0U463kU1VNPX2Bcc5GlI7_n19_zVx5FUzXNJzRPXn-cMU6hvfKYhBnevi2wSmfso_7cLKxXxnjSSkGXlhFkdsnGOU4MZkpuOWlyoj9YbY5w"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":6923147980287566413,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529478003049732%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-20 16:00:01
+{"registration_ids":["dJTQTZGwNTg:APA91bHTITMFow-WkVwA68OE9fV0IFp1G4yukyOvQnejchJVZfAJ3McbcLPIZJCaMC3KJnYceo1Vt_-l2iu6dFfjdsA8qFRJRJhRrRgDk1FHZQtcj_0X5VTZhHaV6z4sNiaGyDcuVebgYD8qsnziV32bK0ucnRpOzA"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":4627758165336388786,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+
+
+2018-06-20 17:00:01
+{"registration_ids":["fN77MC9KWIY:APA91bH3h58x5wpCyx1dmEYIg_QFOZxCgiYy2BKLuLB4D7kV7WWsF08T3V7xy6L8c2Tjlom3h7zbMI7JhAdrGy11h3_k1V1E43tpB2hP4DX8hzELtIpiVRnmZ467b7s_F1GXi1xvLP_aU2JcRuWWJXYebu1RZunZRQ"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":7150877848304156339,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529485203765848%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-20 18:00:01
+{"registration_ids":["fN77MC9KWIY:APA91bH3h58x5wpCyx1dmEYIg_QFOZxCgiYy2BKLuLB4D7kV7WWsF08T3V7xy6L8c2Tjlom3h7zbMI7JhAdrGy11h3_k1V1E43tpB2hP4DX8hzELtIpiVRnmZ467b7s_F1GXi1xvLP_aU2JcRuWWJXYebu1RZunZRQ"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":8441517765037435975,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529488803175812%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-21 08:00:01
+{"registration_ids":["fN77MC9KWIY:APA91bH3h58x5wpCyx1dmEYIg_QFOZxCgiYy2BKLuLB4D7kV7WWsF08T3V7xy6L8c2Tjlom3h7zbMI7JhAdrGy11h3_k1V1E43tpB2hP4DX8hzELtIpiVRnmZ467b7s_F1GXi1xvLP_aU2JcRuWWJXYebu1RZunZRQ"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":7743761991497909767,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529539203662349%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-21 09:00:01
+{"registration_ids":["fN77MC9KWIY:APA91bH3h58x5wpCyx1dmEYIg_QFOZxCgiYy2BKLuLB4D7kV7WWsF08T3V7xy6L8c2Tjlom3h7zbMI7JhAdrGy11h3_k1V1E43tpB2hP4DX8hzELtIpiVRnmZ467b7s_F1GXi1xvLP_aU2JcRuWWJXYebu1RZunZRQ"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":6411309281085433134,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529542804107461%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-21 10:00:01
+
+0 results
+
+
+
+
+2018-06-21 11:00:01
+
+0 results
+
+
+
+
+2018-06-21 12:00:01
+
+0 results
+
+
+
+
+2018-06-21 13:00:01
+
+0 results
+
+
+
+
+2018-06-21 14:00:01
+
+0 results
+
+
+
+
+2018-06-21 15:00:01
+
+0 results
+
+
+
+
+2018-06-21 16:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"Sudoku is reading your sim card info and sending it to www.abnormal.com."}}{"multicast_id":7311894826744015920,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529568004166094%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-21 17:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":6469938842990889448,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529571604543821%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-21 18:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":7106604466981783275,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529575204970051%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-22 08:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":5887457833595778108,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529625605558468%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-22 09:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":6354418355330447765,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529629204953624%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-22 10:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":5054131953448042775,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529632805370188%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-22 11:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":8879432328803165588,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529636405718231%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-22 12:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":5179808001379758351,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529640005067756%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-22 13:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":6283485385449759233,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529643605476561%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-22 14:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":6226179663540253646,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529647205867785%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-22 15:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":6418868428715508291,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529650805235004%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-22 16:00:01
+{"registration_ids":["eJWtWnNjcC0:APA91bEYDhjTnQU5GPJ0y_yRMpMv7d0bKjUjtdxS6UvpKqzyXGtaavTDEO1dIhNznAzEN1bYCL-HL6YpRhsmZ0_G6Ioh-HSK_AKidyM8oSQ2xBnHWn4zIEiw4tFdfkmhYSNDdjggcU8MgERhzft9TzoUb_6bPB9Pvg"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":5936653103664377630,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529654405592548%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+
+
+2018-06-22 17:00:01
+
+0 results
+
+
+
+
+2018-06-22 18:00:01
+{"registration_ids":["cKceOF2vz_E:APA91bFJWEDTP_1FMH3gGjANVTkHDFaa9PYPYJyC9Lxrop2ETnG301KBZeABuXlj3KS3idnk2RavS2pZFmsiMfbUQu4aTsR96TFDF6UDQi-JnGHGt5si47i5IbWZPNf6d0zgB5So-pQhUj7Roai254oSgRbXvZtZSg"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":7954907895147098913,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1529661606190162%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+2018-06-25 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","fac2YQ2IWf4:APA91bHPZm7Ke7lQTSukFcGi-e_3iekQIhSooF56Ai4DW3SzPS-bVCvaBUwnEsCo1taTkE-7E99QP603QpQvr44w7mEyJtnWinoKgrmVwPuxj1_2UA8LL8N2XP8zV2g4EKhwFItFlxhgHLxI8cmMCGW-xYb26XbvfQ"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":4640429787372351157,"success":1,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"message_id":"0:1529884808824943%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+2018-06-25 09:00:02
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","fac2YQ2IWf4:APA91bHPZm7Ke7lQTSukFcGi-e_3iekQIhSooF56Ai4DW3SzPS-bVCvaBUwnEsCo1taTkE-7E99QP603QpQvr44w7mEyJtnWinoKgrmVwPuxj1_2UA8LL8N2XP8zV2g4EKhwFItFlxhgHLxI8cmMCGW-xYb26XbvfQ"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":6275503107882952583,"success":1,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"message_id":"0:1529888409205385%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+2018-06-25 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","fac2YQ2IWf4:APA91bHPZm7Ke7lQTSukFcGi-e_3iekQIhSooF56Ai4DW3SzPS-bVCvaBUwnEsCo1taTkE-7E99QP603QpQvr44w7mEyJtnWinoKgrmVwPuxj1_2UA8LL8N2XP8zV2g4EKhwFItFlxhgHLxI8cmMCGW-xYb26XbvfQ"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":4702305875093775078,"success":1,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"message_id":"0:1529892008587211%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+2018-06-25 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","fac2YQ2IWf4:APA91bHPZm7Ke7lQTSukFcGi-e_3iekQIhSooF56Ai4DW3SzPS-bVCvaBUwnEsCo1taTkE-7E99QP603QpQvr44w7mEyJtnWinoKgrmVwPuxj1_2UA8LL8N2XP8zV2g4EKhwFItFlxhgHLxI8cmMCGW-xYb26XbvfQ"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":6764247825864512686,"success":1,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"message_id":"0:1529895608920143%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+2018-06-25 12:00:02
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","fac2YQ2IWf4:APA91bHPZm7Ke7lQTSukFcGi-e_3iekQIhSooF56Ai4DW3SzPS-bVCvaBUwnEsCo1taTkE-7E99QP603QpQvr44w7mEyJtnWinoKgrmVwPuxj1_2UA8LL8N2XP8zV2g4EKhwFItFlxhgHLxI8cmMCGW-xYb26XbvfQ"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":7923697390034856150,"success":1,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"message_id":"0:1529899209332797%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+2018-06-25 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":6392025590070321209,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-25 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":4994207755668585660,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-25 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":7762646868268664384,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-25 16:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":7787485104158398885,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-25 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":5788713909751319061,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-25 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":4784317277986052235,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-26 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":4964960244633157730,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-26 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":8797134873096862109,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-26 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":8742990974836425225,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-26 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw","fvbDvPJtRkE:APA91bH409xDL5k3Ii0UNinrQwigYqmqI8LMfvbuucT9tkUmzp9yhwbSdTNlchqaBA5lD9e_1MSGbgbYAlH2EZCk0_I9BWDncbhfegUuUvjjxyypFFfUzCVqZWasPvBDmX_YhPYwgFCs1GpBDiGmj1itp4xWAeBOJw"],"data":{"default":"Sudoku is reading your sim card info and sending it to www.abnormal.com."}}{"multicast_id":6323094486170629977,"success":1,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"},{"message_id":"0:1529982009953011%509e7bc1f9fd7ecd"}]}
+Notification Sent
+
+
+2018-06-26 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":7628013739629030390,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-26 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":6627755459231876275,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-26 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":9077471598003143502,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-26 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":4742519423203775938,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-26 16:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":9002107139708577289,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-26 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":6440189764323753178,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-26 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":5001129040928476296,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 08:00:02
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":8759193601340660475,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":7494758410114703298,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":7493540030021908758,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":5926667527429836456,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":7344762558494635406,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":8360069323725315343,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":6129905117080525138,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Sudoku is reading your sim card info and sending it to www.abnormal.com."}}{"multicast_id":8445223747841341589,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 16:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":7043967317161195877,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":5616037123111117184,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-27 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":8982620369721753232,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Sudoku is reading your sim card info and sending it to www.abnormal.com."}}{"multicast_id":8033250751727366098,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":7730967112840091656,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":7969548681595772070,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":5155863632331287970,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":9208493462299856734,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":4754381724827360169,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":8025727477433070674,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":6059488855294731120,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 16:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":8967571916726736769,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":8650972094059978061,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-28 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":5558312034473119014,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":5302256505165445651,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":8296823950914042402,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":6909980143624754797,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":7375857874187883573,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":8754184922078037868,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Sudoku is reading your sim card info and sending it to www.abnormal.com."}}{"multicast_id":8049009188219641521,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":6773853214112838121,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":6343232964636528214,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 16:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":6357066601754642503,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":6350438066242223674,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-06-29 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":7920890737156892628,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Sudoku is reading your sim card info and sending it to www.abnormal.com."}}{"multicast_id":8042072249720870657,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":8434289606576702708,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Sudoku is reading your sim card info and sending it to www.abnormal.com."}}{"multicast_id":7699400280447030478,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":7013200080401083530,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":8008724949550841970,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":6876525240276850485,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":7051624351404488287,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":5501889695390751488,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 16:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":5352300993131515416,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":6293349016770584834,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-02 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":8193665542319710902,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Sudoku is reading your sim card info and sending it to www.abnormal.com."}}{"multicast_id":7632405794854630428,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":8916454087518452352,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":6921938904581172706,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":4793319402204376480,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":8086618151041176907,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":7496816470843018211,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":7244648408307438274,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":5097436966132908178,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 16:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":7258686327284293162,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":4656749366679925933,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-03 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Sudoku is reading your sim card info and sending it to www.abnormal.com."}}{"multicast_id":6893914036607059870,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":8258241329766953194,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":4727945986176123316,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":8815436324700442469,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":6627879309438808242,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":5282267944935337717,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":5382344532813075636,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":6830441372900167785,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":5529923228565941319,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 16:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":7878691915974272109,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":7345823203973782529,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-04 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":7177133037206029566,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Sudoku is reading your sim card info and sending it to www.abnormal.com."}}{"multicast_id":7698248820208681187,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":7276989527527989694,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":7549986220190997237,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":7745202116777209295,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":7105688950269059149,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":5465348367430880387,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":6417305136124961193,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":6408943636325599308,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 16:00:02
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":5456534781041307114,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":7890986527787035459,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-05 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":8926873265685671244,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":8150437249823564912,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":5000525480364897065,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":5395375769629774639,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":7682969162190217366,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":5956308122305810272,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":4957754036461730472,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":5605783625284166396,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is accessing the contacts of your device."}}{"multicast_id":7307285794842780456,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 16:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":8056510541487152483,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":8663018727532196574,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-06 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":7379796079908094351,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":6551772698813455519,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":4913131158416852763,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":8201193231293437002,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is modifying the calendar events of your device."}}{"multicast_id":8514396812848888640,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":5230625554123941017,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":7301820397015437772,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 14:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"YouTube is accessing the microphone of your device."}}{"multicast_id":7121199708351975216,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 15:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":7975380421032796713,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 16:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":8740562514624331609,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 17:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":6848114345576563586,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-09 18:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Instagram is accessing the camera of your device."}}{"multicast_id":7990487491850855486,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-10 08:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Gmail is sending emails to everyone in your address book."}}{"multicast_id":6761519025025365423,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-10 09:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Candy Crush is reading your contacts and sending it to www.hackme.com."}}{"multicast_id":7674135174690091627,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-10 10:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Facebook is accessing the location of your device."}}{"multicast_id":7158073114108826414,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-10 11:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":6485811448222781509,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-10 12:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Clock is accessing your geolocation and sending it out."}}{"multicast_id":5691105603652116633,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-10 13:00:01
+{"registration_ids":["dosUyuNNJ88:APA91bHVBorvwlPkE4WbVIiYWcKOQN9-toCa_Yqicl6tRrAbMs7CZg2V34fvctDsDo6YgifHvcIb0JuFps7M3eNwruLgSBAosixsJ6t-Y0odiSmKcLeyfsysdb66diYQGjuFnG2vFuamzo0_neSFE3172_b9eIokZA","ecu8csRAIE8:APA91bH0RsZ1qC4IyC4srV879SDUlj05QPlNh9IZGO3LE4OrULx-1FSNYfFzNksgXfx6ovGcOm8YpiI8U4nYiornWvhCn_y3sHTpdKt4ERNM32p0dNyfXTTvnCDiK6HgyD6aUkknROQB_T3FtoFH0HYci-qmKaf5Jw"],"data":{"default":"Whatsapp is making phone calls to numbers not found in your contact list ."}}{"multicast_id":8223895036054430199,"success":0,"failure":2,"canonical_ids":0,"results":[{"error":"NotRegistered"},{"error":"NotRegistered"}]}
+Notification Sent
+
+
+2018-07-10 14:00:01
+
+0 results

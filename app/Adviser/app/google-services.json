@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "630877518137",
+    "firebase_url": "https://adviser-1525098495906.firebaseio.com",
+    "project_id": "adviser-1525098495906",
+    "storage_bucket": "adviser-1525098495906.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630877518137:android:0be09293a211fc69",
+        "android_client_info": {
+          "package_name": "com.smu.adviser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630877518137-hacvugefmg49dhdk8p2jmbu4fb079e4l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smu.adviser",
+            "certificate_hash": "884ae950ef44136af10ff759ca5b1450bf64233b"
+          }
+        },
+        {
+          "client_id": "630877518137-kpmsq830judbja1f0m626rq2nadlr6uc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "630877518137-kpmsq830judbja1f0m626rq2nadlr6uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG2uapf9WxY_sWNs0ixKfuOLdcZs7SUqQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630877518137-kpmsq830judbja1f0m626rq2nadlr6uc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630877518137:android:158671effc00498a",
+        "android_client_info": {
+          "package_name": "com.smu.appmod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630877518137-v1it6nn81l5eboes8rh159ppbkng1e4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smu.appmod",
+            "certificate_hash": "884ae950ef44136af10ff759ca5b1450bf64233b"
+          }
+        },
+        {
+          "client_id": "630877518137-kpmsq830judbja1f0m626rq2nadlr6uc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "630877518137-kpmsq830judbja1f0m626rq2nadlr6uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG2uapf9WxY_sWNs0ixKfuOLdcZs7SUqQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630877518137-kpmsq830judbja1f0m626rq2nadlr6uc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
