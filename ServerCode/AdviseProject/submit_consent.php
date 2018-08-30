@@ -8,7 +8,7 @@
     include 'db_functions.php';
     $db = new DB_Functions_GCM();
 
-    echo $db->submit_consent($_POST['id']);
+    $db->submit_consent($_POST['id']);
 ?>
 
 <h2>Thank you for the participation!</h2>

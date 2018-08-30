@@ -12,7 +12,7 @@
 
 <h1>SMU-IRB: Participant Information Sheet and Informed Consent Form (Online)</h1>
 
-<p>Title of Research Study as it will be stated on the Informed Consent Form provided to participants: Software Reuse Insights for IT Businesses through Software Library Recommendation</p>
+<p>Title of Research Study as it will be stated on the Informed Consent Form provided to participants: <b>Safety and Privacy of Smart-City</b></p>
 
 <p>Principal Investigator, Title, and Affiliation: David Lo, Associate Professor, School of Information Systems, SMU</p>
 

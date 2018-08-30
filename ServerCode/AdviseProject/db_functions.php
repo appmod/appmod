@@ -129,7 +129,19 @@ class DB_Functions_GCM {
                 }
 
         }
+	
+	//for user study only
+	public function updateUser($gcm_regid, $instanceId, $phone){
+		$result = mysqli_query($GLOBALS['mysqli_connection'], "update gcm_users set gcm_instance_id = '$instanceId', gcm_regid = '$gcm_regid', login_at = NOW() where phone = '$phone'");
 
+		echo '*****result='.$result;
+		if($result){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
 
 	public function storeUser($gcm_regid, $instanceId,$phone,$role) {
 		$result = mysqli_query($GLOBALS['mysqli_connection'], "INSERT INTO gcm_users(phone, role,gcm_instance_id, gcm_regid, login_at) VALUES('$phone','$role', '$instanceId', '$gcm_regid', NOW())");

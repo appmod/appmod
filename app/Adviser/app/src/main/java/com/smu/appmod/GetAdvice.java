@@ -108,6 +108,7 @@ public class GetAdvice extends Activity {
                 final String urlString = "http://flyer.sis.smu.edu.sg/AdviseProject/seekAdvise.php";
                 if (utility.hasActiveInternetConnection("http://www.google.com")) {
                     String phone = utility.getLoginPhone();
+                    Log.i("AppMod", "SeekAdvise: " + phone + ":" + mAnomalyid + ":" + message);
                     flag = utility.serverInteraction(urlString, phone + ":" + mAnomalyid + ":" + message);
                 } else {
                     GetAdvice.this.runOnUiThread(new Runnable() {

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">AppMod</string>
-    <string name="phone">Please enter the last 4 digits of your mobile number:</string>
+    <!--<string name="phone">Please enter the last 4 digits of your mobile number:</string>-->
+    <string name="phone">Please enter the 3 digits we send you via email:</string>
     <string name="termsConditions">Terms and Conditions</string>
     <string name="agreeContinue">I Agree and Continue</string>
     <string name="tapAgree">By clicking \"I Agree and Continue\", I acknowledge that I have read and accept the </string>

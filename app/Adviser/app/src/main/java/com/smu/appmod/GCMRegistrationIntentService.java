@@ -63,6 +63,7 @@ public class GCMRegistrationIntentService extends IntentService {
                 sharedPreferences.edit().putString(UtilityClass.REG_ID, token).apply();
                 //sharedPreferences.edit().putBoolean(UtilityClass.REG_SUCCESS, true).apply();
                 boolean result = registerWithServer(token, instanceID, phoneAndRole);
+//                Log.i("AppMod", "register result: " + result);
                 if (result) {
                     sharedPreferences.edit().putBoolean(UtilityClass.SENT_TOKEN_TO_SERVER, true).apply();
                     sharedPreferences.edit().putBoolean(UtilityClass.REG_SUCCESS, false).apply();
@@ -96,10 +97,12 @@ public class GCMRegistrationIntentService extends IntentService {
         params.put("role", role);
         params.put("instanceId", instanceID.toString());
         //long backoff = BACKOFF_MILLI_SECONDS + random.nextInt(1000);
+        Log.i("AppMod", "token: " + token);
         long backoff = 500;
         for (int i = 0; i < MAX_ATTEMPTS; i++) {
             try {
                 String result = post(serverUrl, params);
+                Log.i("AppMod", "Register return result:" + result);
                 if (result.contains("Failed!")) {
                     //Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
                     return false;
@@ -158,9 +161,9 @@ public class GCMRegistrationIntentService extends IntentService {
                 response += decodedString;
             }
             in.close();
-            //Log.d(TAG, "***** response=" + response);
+            Log.d(TAG, "***** response=" + response);
             int status = conn.getResponseCode();
-            //Log.d(TAG, "***** status=" + status);
+            Log.d(TAG, "***** status=" + status);
             if (status != 200) {
                 throw new Exception("Status=" + status);
             }

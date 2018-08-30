@@ -75,8 +75,9 @@ public class LoginActivity extends Activity {
                 SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
                 boolean sentToken = sharedPreferences.getBoolean(UtilityClass.SENT_TOKEN_TO_SERVER, false);
                 if (sentToken) {
-                    if (sharedPreferences.getBoolean(UtilityClass.REG_SUCCESS, false)) {
-                        Toast.makeText(LoginActivity.this, "Registration failed. User already exists", Toast.LENGTH_SHORT).show();
+                    //this code is for user study only.
+                    if (sharedPreferences.getBoolean(UtilityClass.REG_SUCCESS, false)){
+                        Toast.makeText(LoginActivity.this, "Login failed. Please input the unique ID we send you via email.", Toast.LENGTH_SHORT).show();
                         if (progressDialog != null) {
                             progressDialog.dismiss();
                             progressDialog = null;
@@ -87,13 +88,62 @@ public class LoginActivity extends Activity {
                             progressDialog.dismiss();
                             progressDialog = null;
                         }
+
+                        String phone = utility.getLoginPhone();
+                        String prefix = phone.substring(0, 3);
+
+
                         if (utility.getRole().trim().equals("Dependant")) {
                             String query1 = "INSERT INTO ADVICES(_id,date,seeker_name,anomaly) values ('" + "depen" + "','"
                                     + currentDateTimeString + "','" + "myself" + "','" + "Registered successfully. Wait till your advisor sends you an approval request for getting paired up." + "')";
                             dbManager.executeQuery(query1);
+
+                            String adviserName = prefix + "b";
+                            String query2 = "INSERT INTO ADVICES(_id,date,seeker_name,anomaly) values ('" + "depen" + "','"
+                                    + currentDateTimeString + "','" + "myself" + "','" + "You have approved " + adviserName.trim() + " as your advisor." + "')";
+                            dbManager.executeQuery(query2);
+                            utility.setAdviser(true);
+
+                            utility.setAdviserName(adviserName);
                         }
+                        else if(utility.getRole().trim().equals("Adviser")){
+                            String phoneDependant = prefix + "a";
+                            String nameDependant = "AdviseeForUserStudy";
+                            String status = getResources().getString(R.string.paired);
+                            String text = getResources().getString(R.string.notif_sent_request);
+
+                            String query = "INSERT INTO DEPENDANTS(name,phone,unread, status) values ('"
+                                    + nameDependant + "','" + phoneDependant + "',1,'" + status + "')";
+                            dbManager.executeQuery(query);
+
+                            String query2 = "INSERT INTO ADVICES(_id,date,seeker_name,anomaly) values ('" + "depen" + "','"
+                                    + currentDateTimeString + "','" + nameDependant + "','" + "You added " + nameDependant + " as one of your advisees. " + text + "')";
+                            dbManager.executeQuery(query2);
+
+                        }
+
                         launchHomeScreen();
                     }
+
+//                    if (sharedPreferences.getBoolean(UtilityClass.REG_SUCCESS, false)) {
+//                        Toast.makeText(LoginActivity.this, "Registration failed. User already exists", Toast.LENGTH_SHORT).show();
+//                        if (progressDialog != null) {
+//                            progressDialog.dismiss();
+//                            progressDialog = null;
+//                        }
+//                    } else {
+//                        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+//                        if (progressDialog != null) {
+//                            progressDialog.dismiss();
+//                            progressDialog = null;
+//                        }
+//                        if (utility.getRole().trim().equals("Dependant")) {
+//                            String query1 = "INSERT INTO ADVICES(_id,date,seeker_name,anomaly) values ('" + "depen" + "','"
+//                                    + currentDateTimeString + "','" + "myself" + "','" + "Registered successfully. Wait till your advisor sends you an approval request for getting paired up." + "')";
+//                            dbManager.executeQuery(query1);
+//                        }
+//                        launchHomeScreen();
+//                    }
                 } else {
                     Toast.makeText(LoginActivity.this,"Please check internet connectivity and then try again!", Toast.LENGTH_LONG).show();
                 }
@@ -127,10 +177,16 @@ public class LoginActivity extends Activity {
                                              //    Toast.makeText(getApplicationContext(),
                                              //            "Only Singapore (+65) phone numbers are accepted. Please try again.", Toast.LENGTH_SHORT).show();
                                              //} else
-                                             if (phone.length() != 4 || !TextUtils.isDigitsOnly(phone)) {
+//                                             if (phone.length() != 4 || !TextUtils.isDigitsOnly(phone)) {
+//                                                 Toast.makeText(getApplicationContext(),
+//                                                         "Only last 4 digits of your phone number is required. Please try again.", Toast.LENGTH_SHORT).show();
+//                                             }
+                                             if (phone.length() != 3 || !TextUtils.isDigitsOnly(phone)) {
                                                  Toast.makeText(getApplicationContext(),
-                                                         "Only last 4 digits of your phone number is required. Please try again.", Toast.LENGTH_SHORT).show();
-                                             } else if ((!phone.equals("")) && (radioButton != null)) {
+//                                                         "Only last 4 digits of your phone number is required. Please try again.", Toast.LENGTH_SHORT).show();
+                                                         "Only 3 digits is required. Please try again.", Toast.LENGTH_SHORT).show();
+                                             }
+                                             else if ((!phone.equals("")) && (radioButton != null)) {
                                                  //phone = phone_edit.getText().toString();
                                                  role = radioButton.getText().toString();
                                                  if (role.startsWith("Advisee")) {
@@ -139,6 +195,12 @@ public class LoginActivity extends Activity {
                                                      role = "Adviser";
                                                  }
                                                  if (phone.matches("[0-9]+") || phone.matches("(.*)+(.*)")) {
+                                                     if("Dependant".equals(role)){
+                                                         phone = phone + "a";
+                                                     }
+                                                     else if("Adviser".equals(role)){
+                                                         phone = phone + "b";
+                                                     }
                                                      utility.createUserLoginSession(phone, role);
                                                      progressDialog = ProgressDialog.show(LoginActivity.this, "", "Registering. Please wait...", true);
                                                      askForPermission(READ_CONTACTS,ACCOUNTS);
