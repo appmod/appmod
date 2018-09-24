@@ -60,6 +60,7 @@ public class DependantListAdapter extends BaseAdapter {
         if (dependantListItem.getDependantStatus().equals(context.getResources().getString(R.string.paired))) {
             dependantName.setTextColor(Color.parseColor("#008000"));
             sendRequest.setVisibility(View.GONE);
+            deletebtn.setVisibility(View.GONE);
         } else if (dependantListItem.getDependantStatus().equals(context.getResources().getString(R.string.sent_request))) {
             dependantName.setTextColor(Color.parseColor("#FFA812"));
             sendRequest.setVisibility(View.GONE);

@@ -1,0 +1,49 @@
+email: jehyunleekr@gmail.com
+/*************************************************************/
+
+runtime.h -> install global variables
+runtime/Android.bp -> declare new files -> if you add new files to Android OS, you need add file names to Android.dp. Then, the OS will include new files during re-compilation process.
+/*************** art_method.c *************************/
+art_method.cc -> line 351 -> method: ArtMethod::Invoke -> point to inject appmod code
+PrettyMethod() -> this method returns pretty format of invoked method. The output is a std::string variable.
+/*****************************************************/
+This is the sketch of the new code. Ignore it since the implementation in appmod.c is easier to follow.
+
+int res = foo(PrettyMethod());
+
+if (res == 0) // do nothing
+{}
+else if (res == 1) // raise warning
+{
+	// Java call 
+	// [ ok ] [ kill the app ]
+	// 
+	// ActivityManager()::
+
+	// return output from returned value of Java side methods
+	// exit(-1):
+}else
+{
+// uninstall
+	// call Java side to uninstall by sending an intent for uninstall
+	// Java side can tell the package of the current app -> mContext.getPackageName() //mContext is global var
+}
+/*************** compile android code ***********************/
+
+--------------------------------------------
+// build emulator
+source build/envsetup.sh 
+lunch aosp-x86_userdebug
+make -j8
+make snod
+emulator
+
+// install OS to phone
+adb reboot bootloader
+fastboot flashall
+
+
+// Pixel has codename of sailfish
+
+
+

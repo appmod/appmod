@@ -205,144 +205,144 @@ public class ManageDependants extends Activity implements View.OnClickListener, 
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.addDependants) {
-            String query = "SELECT * FROM DEPENDANTS";
-            Cursor c1 = dbManager.selectQuery(query);
-            if (c1 != null && c1.getCount() < 3) {
-                dialog.setContentView(R.layout.displaycontacts);
-                dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE | WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
-                dialog.setTitle(Html.fromHtml("<font color='#E32636'><b>Add an Advisee</font>"));
-                contactArrayList = new ArrayList<Contact>();
-                contactList = new ArrayList<>();
-                resolver = this.getContentResolver();
-                contactlistView = (ListView) dialog.findViewById(R.id.contacts_list);
-                phones = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null, null, ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME + " ASC");
-                if (phones != null) {
-                    if (phones.getCount() == 0) {
-                        Toast.makeText(ManageDependants.this, "No contacts in your contact list.", Toast.LENGTH_LONG).show();
-                    } else {
-                        progressDialog = ProgressDialog.show(ManageDependants.this, "", "Deleting. Please wait...", true);
-                        //Toast.makeText(ManageDependants.this, "Deleting...Please wait...", Toast.LENGTH_SHORT).show();
-                        while (phones.moveToNext()) {
-                            final Contact contact = new Contact();
-                            String name = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
-                            String phoneNumber = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-                            name = name.replaceAll("[^a-zA-Z0-9]+", " ");
-                            name = name.replaceAll("\\s", " ");
-                            phoneNumber = phoneNumber.replaceAll("\\s", "");
-                            if (contactList.contains(new Pair<String,String>(name, phoneNumber))) {
-                            } else {
-                                if (!name.equals("")) {
-                                    contactList.add(new Pair<>(name, phoneNumber));
-                                    contact.setName(name);
-                                    contact.setPhone(phoneNumber);
-                                    contact.setCheckedBox(false);
-                                    contactArrayList.add(contact);
-                                }
-                            }
-                        }
-                    }
-                    if (progressDialog != null) {
-                        progressDialog.dismiss();
-                        progressDialog = null;
-                    }
-                }
-                phones.close();
-                contactAdapter = new SelectContactAdapter(contactArrayList, ManageDependants.this);
-                contactlistView.setAdapter(contactAdapter);
-                contactlistView.setFastScrollEnabled(true);
-                search = (EditText) dialog.findViewById(R.id.searchView);
-                search.addTextChangedListener(new TextWatcher() {
-                    @Override
-                    public void afterTextChanged(Editable arg0) {
-                        String text = search.getText().toString().toLowerCase(Locale.getDefault());
-                        contactAdapter.filter(text);
-                    }
-                    @Override
-                    public void beforeTextChanged(CharSequence arg0, int arg1,int arg2, int arg3) {
-                    }
-                    @Override
-                    public void onTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
-                    }
-                });
-                Button dialogButtonAdd = (Button) dialog.findViewById(R.id.dialogButtonAdd);
-                Button dialogButtonBack = (Button) dialog.findViewById(R.id.dialogButtonBack);
-                dialogButtonAdd.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
-                            return;
-                        }
-                        mLastClickTime = SystemClock.elapsedRealtime();
-
-                        ArrayList<Contact> selectedList = contactArrayList;
-                        for (int i = 0; i < contactArrayList.size(); i++) {
-                            Contact data = selectedList.get(i);
-                            if (data.getCheckedBox()) {
-                                String nameDependant = data.getName();
-                                String phoneDependant = data.getPhone().trim();
-                                phoneDependant = phoneDependant.substring(phoneDependant.length() - 4);
-                                String phone = null;
-                                String query = "SELECT * FROM DEPENDANTS where name='" + nameDependant + "'";
-                                Cursor c1 = dbManager.selectQuery(query);
-                                if (c1 != null && c1.getCount() != 0) {
-                                    if (c1.moveToFirst()) {
-                                        do {
-                                            phone = c1.getString(c1.getColumnIndex("phone"));
-                                            phone = phone.trim();
-                                        } while (c1.moveToNext());
-                                    }
-                                }
-                                if (c1 != null)
-                                    c1.close();
-                                String loginPhone = utility.getLoginPhone();
-                                if (loginPhone.equals(phoneDependant)) {
-                                    Toast.makeText(ManageDependants.this, "You cannot add yourself as advisee.", Toast.LENGTH_SHORT).show();
-                                } else if (phone != null && phone.equals(phoneDependant)) {
-                                    Toast.makeText(ManageDependants.this, "You cannot add same advisee again.", Toast.LENGTH_SHORT).show();
-                                } else {
-                                    progressDialog = ProgressDialog.show(ManageDependants.this, "", "Adding. Please wait...", true);
-                                    //Toast.makeText(ManageDependants.this, "Adding...Please wait...", Toast.LENGTH_SHORT).show();
-                                    //new AddDependantAsyncTask(nameDependant, phoneDependant, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-                                    new AddDependantAsyncTask(nameDependant, phoneDependant, true).execute();
-                                    try {
-                                        long sec = 1000;
-                                        Thread.sleep(sec);
-                                    } catch (Exception e) {
-                                        Log.e(TAG, e.toString());
-                                    }
-                                    finish();
-                                    Intent intent = new Intent(ManageDependants.this, ManageDependants.class);
-                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                    startActivity(intent);
-                                    //showList();
-                                }
-                            }
-                        }
-                        finish();
-                        Intent intent = new Intent(ManageDependants.this, ManageDependants.class);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent);
-
-                    }
-                });
-                dialogButtonBack.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if (dialog != null) {
-                            dialog.dismiss();
-                            dialog = null;
-                        }
-                        recreate();
-                        showList();
-                    }
-                });
-                if (dialog != null && !dialog.isShowing())
-                    dialog.show();
-            } else {
-                Toast.makeText(ManageDependants.this, "You can only add at most 3 advisees.", Toast.LENGTH_SHORT).show();
-            }
-        }
+//        if (view.getId() == R.id.addDependants) {
+//            String query = "SELECT * FROM DEPENDANTS";
+//            Cursor c1 = dbManager.selectQuery(query);
+//            if (c1 != null && c1.getCount() < 3) {
+//                dialog.setContentView(R.layout.displaycontacts);
+//                dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE | WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+//                dialog.setTitle(Html.fromHtml("<font color='#E32636'><b>Add an Advisee</font>"));
+//                contactArrayList = new ArrayList<Contact>();
+//                contactList = new ArrayList<>();
+//                resolver = this.getContentResolver();
+//                contactlistView = (ListView) dialog.findViewById(R.id.contacts_list);
+//                phones = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null, null, ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME + " ASC");
+//                if (phones != null) {
+//                    if (phones.getCount() == 0) {
+//                        Toast.makeText(ManageDependants.this, "No contacts in your contact list.", Toast.LENGTH_LONG).show();
+//                    } else {
+//                        progressDialog = ProgressDialog.show(ManageDependants.this, "", "Deleting. Please wait...", true);
+//                        //Toast.makeText(ManageDependants.this, "Deleting...Please wait...", Toast.LENGTH_SHORT).show();
+//                        while (phones.moveToNext()) {
+//                            final Contact contact = new Contact();
+//                            String name = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+//                            String phoneNumber = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+//                            name = name.replaceAll("[^a-zA-Z0-9]+", " ");
+//                            name = name.replaceAll("\\s", " ");
+//                            phoneNumber = phoneNumber.replaceAll("\\s", "");
+//                            if (contactList.contains(new Pair<String,String>(name, phoneNumber))) {
+//                            } else {
+//                                if (!name.equals("")) {
+//                                    contactList.add(new Pair<>(name, phoneNumber));
+//                                    contact.setName(name);
+//                                    contact.setPhone(phoneNumber);
+//                                    contact.setCheckedBox(false);
+//                                    contactArrayList.add(contact);
+//                                }
+//                            }
+//                        }
+//                    }
+//                    if (progressDialog != null) {
+//                        progressDialog.dismiss();
+//                        progressDialog = null;
+//                    }
+//                }
+//                phones.close();
+//                contactAdapter = new SelectContactAdapter(contactArrayList, ManageDependants.this);
+//                contactlistView.setAdapter(contactAdapter);
+//                contactlistView.setFastScrollEnabled(true);
+//                search = (EditText) dialog.findViewById(R.id.searchView);
+//                search.addTextChangedListener(new TextWatcher() {
+//                    @Override
+//                    public void afterTextChanged(Editable arg0) {
+//                        String text = search.getText().toString().toLowerCase(Locale.getDefault());
+//                        contactAdapter.filter(text);
+//                    }
+//                    @Override
+//                    public void beforeTextChanged(CharSequence arg0, int arg1,int arg2, int arg3) {
+//                    }
+//                    @Override
+//                    public void onTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
+//                    }
+//                });
+//                Button dialogButtonAdd = (Button) dialog.findViewById(R.id.dialogButtonAdd);
+//                Button dialogButtonBack = (Button) dialog.findViewById(R.id.dialogButtonBack);
+//                dialogButtonAdd.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+//                            return;
+//                        }
+//                        mLastClickTime = SystemClock.elapsedRealtime();
+//
+//                        ArrayList<Contact> selectedList = contactArrayList;
+//                        for (int i = 0; i < contactArrayList.size(); i++) {
+//                            Contact data = selectedList.get(i);
+//                            if (data.getCheckedBox()) {
+//                                String nameDependant = data.getName();
+//                                String phoneDependant = data.getPhone().trim();
+//                                phoneDependant = phoneDependant.substring(phoneDependant.length() - 4);
+//                                String phone = null;
+//                                String query = "SELECT * FROM DEPENDANTS where name='" + nameDependant + "'";
+//                                Cursor c1 = dbManager.selectQuery(query);
+//                                if (c1 != null && c1.getCount() != 0) {
+//                                    if (c1.moveToFirst()) {
+//                                        do {
+//                                            phone = c1.getString(c1.getColumnIndex("phone"));
+//                                            phone = phone.trim();
+//                                        } while (c1.moveToNext());
+//                                    }
+//                                }
+//                                if (c1 != null)
+//                                    c1.close();
+//                                String loginPhone = utility.getLoginPhone();
+//                                if (loginPhone.equals(phoneDependant)) {
+//                                    Toast.makeText(ManageDependants.this, "You cannot add yourself as advisee.", Toast.LENGTH_SHORT).show();
+//                                } else if (phone != null && phone.equals(phoneDependant)) {
+//                                    Toast.makeText(ManageDependants.this, "You cannot add same advisee again.", Toast.LENGTH_SHORT).show();
+//                                } else {
+//                                    progressDialog = ProgressDialog.show(ManageDependants.this, "", "Adding. Please wait...", true);
+//                                    //Toast.makeText(ManageDependants.this, "Adding...Please wait...", Toast.LENGTH_SHORT).show();
+//                                    //new AddDependantAsyncTask(nameDependant, phoneDependant, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+//                                    new AddDependantAsyncTask(nameDependant, phoneDependant, true).execute();
+//                                    try {
+//                                        long sec = 1000;
+//                                        Thread.sleep(sec);
+//                                    } catch (Exception e) {
+//                                        Log.e(TAG, e.toString());
+//                                    }
+//                                    finish();
+//                                    Intent intent = new Intent(ManageDependants.this, ManageDependants.class);
+//                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                                    startActivity(intent);
+//                                    //showList();
+//                                }
+//                            }
+//                        }
+//                        finish();
+//                        Intent intent = new Intent(ManageDependants.this, ManageDependants.class);
+//                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                        startActivity(intent);
+//
+//                    }
+//                });
+//                dialogButtonBack.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        if (dialog != null) {
+//                            dialog.dismiss();
+//                            dialog = null;
+//                        }
+//                        recreate();
+//                        showList();
+//                    }
+//                });
+//                if (dialog != null && !dialog.isShowing())
+//                    dialog.show();
+//            } else {
+//                Toast.makeText(ManageDependants.this, "You can only add at most 3 advisees.", Toast.LENGTH_SHORT).show();
+//            }
+//        }
     }
 
     class AddDependantAsyncTask extends AsyncTask<String, Void, Boolean> {

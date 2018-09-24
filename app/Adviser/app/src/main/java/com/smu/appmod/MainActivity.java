@@ -55,8 +55,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         emptyTV = (TextView) findViewById(R.id.emptytv);
         ContentResolver cr = getContentResolver();
-        Cursor cur = cr.query(ContactsContract.Contacts.CONTENT_URI,
-                null, null, null, null);
+//        Cursor cur = cr.query(ContactsContract.Contacts.CONTENT_URI,
+//                null, null, null, null);
         getActionBar().setIcon(R.drawable.icon);
         getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#08457E")));
 
@@ -150,12 +150,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.withdraw:
-                if (!utility.hasWithdraw()) {
-                    startActivity(new Intent(MainActivity.this, WithdrawActivity.class));
-                } else {
-                    Toast toast = Toast.makeText(MainActivity.this, "Your participation has already been withdrawn. Thank you.", Toast.LENGTH_SHORT);
-                    toast.show();
-                }
+//                if (!utility.hasWithdraw()) {
+//                    startActivity(new Intent(MainActivity.this, WithdrawActivity.class));
+//                } else {
+//                    Toast toast = Toast.makeText(MainActivity.this, "Your participation has already been withdrawn. Thank you.", Toast.LENGTH_SHORT);
+//                    toast.show();
+//                }
                 break;
         }
     }

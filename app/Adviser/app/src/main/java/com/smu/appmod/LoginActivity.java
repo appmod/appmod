@@ -202,9 +202,9 @@ public class LoginActivity extends Activity {
                                                          phone = phone + "b";
                                                      }
                                                      utility.createUserLoginSession(phone, role);
-                                                     progressDialog = ProgressDialog.show(LoginActivity.this, "", "Registering. Please wait...", true);
-                                                     askForPermission(READ_CONTACTS,ACCOUNTS);
-                                                     //startRegistrationService(true, false);
+//                                                     progressDialog = ProgressDialog.show(LoginActivity.this, "", "Registering. Please wait...", true);
+//                                                     askForPermission(READ_CONTACTS,ACCOUNTS);
+                                                     startRegistrationService(true, false);
                                                  } else {
                                                      Toast.makeText(getApplicationContext(),
                                                              "Phone number should be numeric.", Toast.LENGTH_SHORT).show();

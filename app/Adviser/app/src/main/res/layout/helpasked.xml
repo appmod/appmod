@@ -15,17 +15,38 @@
         android:layout_marginTop="10dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/SCROLLER_ID"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="125dp"-->
+        <!--android:fillViewport="true"-->
+        <!--android:scrollbars="vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/getdetails"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginBottom="189dp"-->
+            <!--android:layout_weight="1.0" />-->
+    <!--</ScrollView>-->
+
     <TextView
         android:id="@+id/getdetails"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@+id/tv"
         android:layout_centerInParent="true"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:scrollbars="vertical"
         android:text=""
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#000000" />
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <View
         android:id="@+id/helper"
@@ -87,5 +108,4 @@
             android:textSize="20sp" />
 
     </LinearLayout>
-
 </RelativeLayout>

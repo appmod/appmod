@@ -26,6 +26,7 @@ function sendPushNotification($registration_ids, $message, $pushMessage) {
 	curl_close($ch);
 
 	$db2 = new DB_Functions_GCM();
+
 	$res = $db2 -> storeNotification($registration_ids[0], $pushMessage, json_encode($fields));
         if(!$res) {echo "\r\n".'Failed to write to database';}
 
@@ -35,10 +36,12 @@ function sendPushNotification($registration_ids, $message, $pushMessage) {
 $pushStatus = '';
 $gcmRegIds = array();
 $conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
-$sql = "SELECT gcm_regid FROM gcm_users where role='Dependant' and status='paired' and withdraw='No' and complete='No' ";
+$sql = "SELECT gcm_regid FROM gcm_users where role='Dependant' and status='paired' and withdraw='No' and complete='No' and gcm_regid is not null";
 $result = $conn->query($sql);
 if (mysqli_num_rows($result) > 0) {
+	 echo mysqli_num_rows($result)."\r\n";
 	 while( $row = mysqli_fetch_assoc($result)){
+		// echo $row['gcm_regid']."\r\n";
 	    array_push($gcmRegIds, $row['gcm_regid']);
 	 }
 } else {
@@ -48,7 +51,7 @@ if (mysqli_num_rows($result) > 0) {
 $regIdChunk = array_chunk($gcmRegIds, 1000);
 foreach ($regIdChunk as $RegId) {
 	$rand_id = rand(1,10);
-	//echo "\r\n".'rand_id='.$rand_id;
+	// echo "\r\n".'rand_id='.$RegId;
 	$sql = "SELECT notification FROM anomalyid where id = '$rand_id' ";
 	$result = $conn->query($sql);
 	if (mysqli_num_rows($result) > 0) {
@@ -57,6 +60,7 @@ foreach ($regIdChunk as $RegId) {
 		}
 		$pushMessage = html_entity_decode($pushMessage);
 		$message = array($nottype => $pushMessage);
+		// echo "\r\n".$RegId." \nMessage:".$pushMessage;
 		$pushStatus = sendPushNotification($RegId, $message, $pushMessage);	
 	} else {
 		echo "\r\n".'No notification';
