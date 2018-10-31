@@ -18,7 +18,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.io.IOException;
 
+import java.util.*;
+
 public class OwnActionActivity extends Activity {
+    /**
+     * BELOW two parameters are added for outsourcing data.
+     */
+    static String[] outsourcing = null;
+    static Map anomaly2percentages = new HashMap<String, String[]>();
+
     Button doNothing, uninstall, kill;
     TextView text;
     UtilityClass utility;
@@ -27,9 +35,26 @@ public class OwnActionActivity extends Activity {
     static String message, anomalyid;
     private static final String TAG = "OAA";
     ImageView image;
+    
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(OwnActionActivity.this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
+        if (outsourcing == null) {
+            outsourcing = getResources().getStringArray(R.array.outsourcing);
+            for (String anomaly_percent : outsourcing) {
+                String[] anomaly_array = anomaly_percent.split(",");
+                String[] percentages = {anomaly_array[1],anomaly_array[2],anomaly_array[3]};
+                anomaly2percentages.put(anomaly_array[0],percentages);
+            }
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.takeactiondialog);
         getActionBar().setIcon(R.drawable.icon);
@@ -71,6 +96,11 @@ public class OwnActionActivity extends Activity {
         doNothing = (Button) findViewById(R.id.dialogdonothing);
         uninstall = (Button) findViewById(R.id.dialogButtonuninstall);
         kill = (Button) findViewById(R.id.dialogButtonkill);
+
+        String[] threePercentages = (String[]) anomaly2percentages.get(message);
+        uninstall.setText(uninstall.getText() + " " + threePercentages[0]);
+        doNothing.setText(doNothing.getText() + " " + threePercentages[2]);
+        kill.setText(kill.getText() + " " + threePercentages[1]);
         doNothing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -105,6 +135,7 @@ public class OwnActionActivity extends Activity {
             mResponse = response;
             mAnomalyid = anomalyid;
         }
+
 
         @Override
         protected Boolean doInBackground(String... params) {

@@ -112,6 +112,7 @@ public class ManageDependants extends Activity implements View.OnClickListener, 
 
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
         Intent intent = new Intent(ManageDependants.this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);

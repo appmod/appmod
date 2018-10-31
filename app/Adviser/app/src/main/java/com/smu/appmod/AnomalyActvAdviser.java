@@ -27,7 +27,16 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Date;
 
+import java.util.Map;
+import java.util.HashMap;
+
 public class AnomalyActvAdviser extends Activity implements View.OnClickListener {
+    /**
+     * BELOW two parameters are added for outsourcing data.
+     */
+    static String[] outsourcing = null;
+    static Map anomaly2percentages = new HashMap<String, String[]>();
+
     UtilityClass utility;
     Button donothing, uninstall, kill;
     static Context context;
@@ -51,6 +60,15 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        if (outsourcing == null) {
+//            outsourcing = getResources().getStringArray(R.array.outsourcing);
+//            for (String anomaly_percent : outsourcing) {
+//                String[] anomaly_array = anomaly_percent.split(",");
+//                String[] percentages = {anomaly_array[1],anomaly_array[2],anomaly_array[3]};
+//                anomaly2percentages.put(anomaly_array[0],percentages);
+//            }
+//        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.helpasked);
         utility = new UtilityClass(getApplicationContext());
@@ -241,6 +259,11 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
         donothing.setOnClickListener(this);
         dbManager = new DBManager(this);
         dbManager.open();
+
+//        String[] threePercentages = (String[]) anomaly2percentages.get(anomaly);
+//        uninstall.setText(uninstall.getText() + " " + threePercentages[0]);
+//        donothing.setText(donothing.getText() + " " + threePercentages[2]);
+//        kill.setText(kill.getText() + " " + threePercentages[1]);
     }
 
     @Override
