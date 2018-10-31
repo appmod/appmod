@@ -16,8 +16,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class AdviceReceived extends Activity {
+    /**
+     * BELOW two parameters are added for outsourcing data.
+     */
+    static String[] outsourcing = null;
+    static Map anomaly2percentages = new HashMap<String, String[]>();
     Button followBtn, dontfollowBtn;
     String reply, anomalyid, anomaly, date;
     TextView anomalyTV, replytv;
@@ -101,12 +108,27 @@ public class AdviceReceived extends Activity {
         });
         dontfollowBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (outsourcing == null) {
+                    outsourcing = getResources().getStringArray(R.array.outsourcing);
+                    for (String anomaly_percent : outsourcing) {
+                        String[] anomaly_array = anomaly_percent.split(",");
+                        String[] percentages = {anomaly_array[1],anomaly_array[2],anomaly_array[3]};
+                        anomaly2percentages.put(anomaly_array[0],percentages);
+                    }
+                }
                 dialog = new Dialog(AdviceReceived.this);
                 dialog.setContentView(R.layout.takeactiondialog);
                 dialog.setTitle(Html.fromHtml("<font color='#08457E'><b>Take Action</font>"));
+
                 Button dialogDoNothing = (Button) dialog.findViewById(R.id.dialogdonothing);
                 Button dialogUninstall = (Button) dialog.findViewById(R.id.dialogButtonuninstall);
                 Button dialogButtonKill = (Button) dialog.findViewById(R.id.dialogButtonkill);
+
+                String[] threePercentages = (String[]) anomaly2percentages.get(anomaly);
+                dialogUninstall.setText(dialogUninstall.getText() + " " + threePercentages[0]);
+                dialogDoNothing.setText(dialogDoNothing.getText() + " " + threePercentages[2]);
+                dialogButtonKill.setText(dialogButtonKill.getText() + " " + threePercentages[1]);
+
                 TextView tv = (TextView) dialog.findViewById(R.id.text);
                 ImageView image = (ImageView) dialog.findViewById(R.id.app);
                 if (appname.equalsIgnoreCase("YouTube")) {
