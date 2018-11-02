@@ -50,17 +50,18 @@
     <string name="addadvisees">Add advisees</string>
     <string name="nopending">No pending tasks found.</string>
     <string name="goback">Go back to previous screen</string>
+    <string name="os_desc">of advisors recommended this)</string>
     <string-array name="outsourcing">
-        <item>Candy Crush is reading your contacts and sending it to www.hackme.com.,78%,14%,8%</item>
-        <item>Clock is accessing your geolocation and sending it out.,35%,41%,24%</item>
-        <item>Facebook is accessing the location of your device.,21%,41%,37%</item>
-        <item>Gmail is modifying the calendar events of your device.,54%,24%,22%</item>
-        <item>Gmail is sending emails to everyone in your address book.,35%,47%,18%</item>
-        <item>Instagram is accessing the camera of your device.,25%,19%,56%</item>
-        <item>Sudoku is reading your sim card info and sending it to www.abnormal.com.,60%,35%,5%</item>
-        <item>Whatsapp is accessing the contacts of your device.,28%,25%,48%</item>
-        <item>Whatsapp is making phone calls to 61234567 (unknown).,38%,53%,9%</item>
-        <item>YouTube is accessing the microphone of your device.,28%,24%,48%</item>
+        <item>Candy Crush is reading your contacts and sending it to www.hackme.com.,89%,11%,0%</item>
+        <item>Clock is accessing your geolocation and sending it out.,40%,50%,10%</item>
+        <item>Facebook is accessing the location of your device.,36%,24%,40%</item>
+        <item>Gmail is modifying the calendar events of your device.,58%,17%,25%</item>
+        <item>Gmail is sending emails to everyone in your address book.,46%,51%,3%</item>
+        <item>Instagram is accessing the camera of your device.,22%,0%,78%</item>
+        <item>Sudoku is reading your sim card info and sending it to www.abnormal.com.,73%,27%,0%</item>
+        <item>Whatsapp is accessing the contacts of your device.,39%,6%,56%</item>
+        <item>Whatsapp is making phone calls to 61234567 (unknown).,50%,50%,0%</item>
+        <item>YouTube is accessing the microphone of your device.,10%,40%,50%</item>
     </string-array>
     <string-array name="CountryCodes" >
         <item>+93,AF</item>
