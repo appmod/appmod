@@ -261,9 +261,26 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
         dbManager.open();
 
         String[] threePercentages = (String[]) anomaly2percentages.get(anomaly);
-        uninstall.setText(uninstall.getText() + " " + threePercentages[0]);
-        donothing.setText(donothing.getText() + " " + threePercentages[2]);
-        kill.setText(kill.getText() + " " + threePercentages[1]);
+        int cs_u = Integer.parseInt(threePercentages[0].substring(0, threePercentages[0].length() - 1));
+        int cs_k = Integer.parseInt(threePercentages[1].substring(0, threePercentages[1].length() - 1));
+        int cs_d = Integer.parseInt(threePercentages[2].substring(0, threePercentages[2].length() - 1));
+
+        int flag = -1;
+        if (cs_u > cs_k && cs_u > cs_d) {
+            flag = 0;
+            uninstall.setBackgroundColor(0xFFCC0000);
+        } else if (cs_k > cs_u && cs_k > cs_d) {
+            flag = 1;
+            kill.setBackgroundColor(0xFFCC0000);
+        } else if (cs_d > cs_u && cs_d > cs_k) {
+            flag = 2;
+            donothing.setBackgroundColor(0xFFCC0000);
+        }
+
+        String desc = getString(R.string.os_desc);
+        uninstall.setText(uninstall.getText() + "\n(" + threePercentages[0] + " " + desc);
+        donothing.setText(donothing.getText() + "\n(" + threePercentages[2] + " " + desc);
+        kill.setText(kill.getText() + "\n(" + threePercentages[1] + " " + desc);
     }
 
     @Override

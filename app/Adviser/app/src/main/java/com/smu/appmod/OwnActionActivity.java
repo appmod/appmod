@@ -114,10 +114,10 @@ public class OwnActionActivity extends Activity {
             doNothing.setBackgroundColor(0xFFCC0000);
         }
 
-        String desc = " of users choose this option)";
-        uninstall.setText(uninstall.getText() + "\n(" + threePercentages[0] + desc);
-        doNothing.setText(doNothing.getText() + "\n(" + threePercentages[2] + desc);
-        kill.setText(kill.getText() + "\n(" + threePercentages[1] + desc);
+        String desc = getString(R.string.os_desc);
+        uninstall.setText(uninstall.getText() + "\n(" + threePercentages[0] + " " + desc);
+        doNothing.setText(doNothing.getText() + "\n(" + threePercentages[2] + " " + desc);
+        kill.setText(kill.getText() + "\n(" + threePercentages[1] + " " + desc);
         doNothing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
