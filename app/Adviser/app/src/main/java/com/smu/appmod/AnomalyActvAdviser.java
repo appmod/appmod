@@ -127,15 +127,15 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
                 dialog.setTitle(Html.fromHtml("<font color='#08457E'><b>Details of the Anomaly</font>"));
 
 
-                WebView webviewAbout = (WebView) dialog.findViewById(R.id.google_play);
-                webviewAbout.setWebViewClient(new WebViewClient());
-                webviewAbout.loadUrl("https://play.google.com/store/apps/details?id=" + id_context[0] + "&hl=en");
+                if (id_context != null) {
+                    WebView webviewAbout = (WebView) dialog.findViewById(R.id.google_play);
+                    webviewAbout.setWebViewClient(new WebViewClient());
+                    webviewAbout.loadUrl("https://play.google.com/store/apps/details?id=" + id_context[0] + "&hl=en");
 
-                WebView webviewContext = (WebView) dialog.findViewById(R.id.context);
-                webviewContext.setWebViewClient(new WebViewClient());
-                webviewContext.loadUrl("file:///android_asset/" + id_context[1]);
-
-
+                    WebView webviewContext = (WebView) dialog.findViewById(R.id.context);
+                    webviewContext.setWebViewClient(new WebViewClient());
+                    webviewContext.loadUrl("file:///android_asset/" + id_context[1]);
+                }
                 if (dialog != null && !dialog.isShowing())
                     dialog.show();
             }
@@ -152,26 +152,29 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
         dbManager.open();
 
         String[] threePercentages = (String[]) anomaly2percentages.get(anomaly);
-        int cs_u = Integer.parseInt(threePercentages[0].substring(0, threePercentages[0].length() - 1));
-        int cs_k = Integer.parseInt(threePercentages[1].substring(0, threePercentages[1].length() - 1));
-        int cs_d = Integer.parseInt(threePercentages[2].substring(0, threePercentages[2].length() - 1));
 
-        int flag = -1;
-        if (cs_u > cs_k && cs_u > cs_d) {
-            flag = 0;
-            uninstall.setBackgroundColor(0xFFCC0000);
-        } else if (cs_k > cs_u && cs_k > cs_d) {
-            flag = 1;
-            kill.setBackgroundColor(0xFFCC0000);
-        } else if (cs_d > cs_u && cs_d > cs_k) {
-            flag = 2;
-            donothing.setBackgroundColor(0xFFCC0000);
+        if (threePercentages != null) {
+            int cs_u = Integer.parseInt(threePercentages[0].substring(0, threePercentages[0].length() - 1));
+            int cs_k = Integer.parseInt(threePercentages[1].substring(0, threePercentages[1].length() - 1));
+            int cs_d = Integer.parseInt(threePercentages[2].substring(0, threePercentages[2].length() - 1));
+
+            int flag = -1;
+            if (cs_u > cs_k && cs_u > cs_d) {
+                flag = 0;
+                uninstall.setBackgroundColor(0xFFCC0000);
+            } else if (cs_k > cs_u && cs_k > cs_d) {
+                flag = 1;
+                kill.setBackgroundColor(0xFFCC0000);
+            } else if (cs_d > cs_u && cs_d > cs_k) {
+                flag = 2;
+                donothing.setBackgroundColor(0xFFCC0000);
+            }
+
+            String desc = getString(R.string.os_desc);
+            uninstall.setText(uninstall.getText() + "\n(" + threePercentages[0] + " " + desc);
+            donothing.setText(donothing.getText() + "\n(" + threePercentages[2] + " " + desc);
+            kill.setText(kill.getText() + "\n(" + threePercentages[1] + " " + desc);
         }
-
-        String desc = getString(R.string.os_desc);
-        uninstall.setText(uninstall.getText() + "\n(" + threePercentages[0] + " " + desc);
-        donothing.setText(donothing.getText() + "\n(" + threePercentages[2] + " " + desc);
-        kill.setText(kill.getText() + "\n(" + threePercentages[1] + " " + desc);
     }
 
     @Override

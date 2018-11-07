@@ -117,8 +117,9 @@ public class OwnActionActivity extends Activity {
 
                 WebView webviewAbout = (WebView) dialog.findViewById(R.id.google_play);
                 webviewAbout.setWebViewClient(new WebViewClient());
-                webviewAbout.loadUrl("https://play.google.com/store/apps/details?id=" + id_context[0] + "&hl=en");
-
+                if (id_context != null) {
+                    webviewAbout.loadUrl("https://play.google.com/store/apps/details?id=" + id_context[0] + "&hl=en");
+                }
                 if (dialog != null && !dialog.isShowing())
                     dialog.show();
             }
@@ -132,26 +133,29 @@ public class OwnActionActivity extends Activity {
         kill = (Button) findViewById(R.id.dialogButtonkill);
 
         String[] threePercentages = (String[]) anomaly2percentages.get(message);
-        int cs_u = Integer.parseInt(threePercentages[0].substring(0, threePercentages[0].length() - 1));
-        int cs_k = Integer.parseInt(threePercentages[1].substring(0, threePercentages[1].length() - 1));
-        int cs_d = Integer.parseInt(threePercentages[2].substring(0, threePercentages[2].length() - 1));
+        if (threePercentages != null) {
+            int cs_u = Integer.parseInt(threePercentages[0].substring(0, threePercentages[0].length() - 1));
+            int cs_k = Integer.parseInt(threePercentages[1].substring(0, threePercentages[1].length() - 1));
+            int cs_d = Integer.parseInt(threePercentages[2].substring(0, threePercentages[2].length() - 1));
 
-        int flag = -1;
-        if (cs_u > cs_k && cs_u > cs_d) {
-            flag = 0;
-            uninstall.setBackgroundColor(0xFFCC0000);
-        } else if (cs_k > cs_u && cs_k > cs_d) {
-            flag = 1;
-            kill.setBackgroundColor(0xFFCC0000);
-        } else if (cs_d > cs_u && cs_d > cs_k) {
-            flag = 2;
-            doNothing.setBackgroundColor(0xFFCC0000);
+            int flag = -1;
+            if (cs_u > cs_k && cs_u > cs_d) {
+                flag = 0;
+                uninstall.setBackgroundColor(0xFFCC0000);
+            } else if (cs_k > cs_u && cs_k > cs_d) {
+                flag = 1;
+                kill.setBackgroundColor(0xFFCC0000);
+            } else if (cs_d > cs_u && cs_d > cs_k) {
+                flag = 2;
+                doNothing.setBackgroundColor(0xFFCC0000);
+            }
+            String desc = getString(R.string.os_desc);
+            uninstall.setText(uninstall.getText() + "\n(" + threePercentages[0] + " " + desc);
+            doNothing.setText(doNothing.getText() + "\n(" + threePercentages[2] + " " + desc);
+            kill.setText(kill.getText() + "\n(" + threePercentages[1] + " " + desc);
         }
 
-        String desc = getString(R.string.os_desc);
-        uninstall.setText(uninstall.getText() + "\n(" + threePercentages[0] + " " + desc);
-        doNothing.setText(doNothing.getText() + "\n(" + threePercentages[2] + " " + desc);
-        kill.setText(kill.getText() + "\n(" + threePercentages[1] + " " + desc);
+
         doNothing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
