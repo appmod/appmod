@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/app"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginTop="25dp"
             android:layout_weight="1.25"
             android:gravity="right"
@@ -32,7 +32,7 @@
         <ImageView
             android:id="@+id/danger"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="90dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1.25"
             android:src="@drawable/phone" />
