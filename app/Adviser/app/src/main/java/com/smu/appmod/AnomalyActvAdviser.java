@@ -1,6 +1,7 @@
 package com.smu.appmod;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -16,7 +17,10 @@ import android.text.style.ClickableSpan;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,10 +39,12 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
      * BELOW two parameters are added for outsourcing data.
      */
     static String[] outsourcing = null;
+    static String[] detail = null;
     static Map anomaly2percentages = new HashMap<String, String[]>();
+    static Map anomaly2detail = new HashMap<String, String[]>();
 
     UtilityClass utility;
-    Button donothing, uninstall, kill;
+    Button donothing, uninstall, kill, detailBtn;
     static Context context;
     private DBManager dbManager;
     String anomaly, seeker_name, anomalyId;
@@ -46,6 +52,9 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
     ScrollView scroll;
     String result;
     ProgressDialog progressDialog;
+    Dialog dialog;
+
+
     private static final String TAG = "AAA";
     private String viewMoreText = "";
 
@@ -69,6 +78,15 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
             }
         }
 
+        if (detail == null) {
+            detail = getResources().getStringArray(R.array.detail);
+            for (String detail_item : detail) {
+                String[] detail_array = detail_item.split(",");
+                String[] id_context = {detail_array[1],detail_array[2]};
+                anomaly2detail.put(detail_array[0],id_context);
+            }
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.helpasked);
         utility = new UtilityClass(getApplicationContext());
@@ -87,170 +105,43 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
             tv1.setText(Html.fromHtml(text));
         }
 
-        getDetails = (TextView) findViewById(R.id.getdetails);
-        getDetails.setMovementMethod(new ScrollingMovementMethod());
-//        scroll = (ScrollView) findViewById(R.id.SCROLLER_ID);
-//        text = "<font color=#08457E>";
-        text = "";
-        String appname = anomaly.split(" ")[0].trim();
-        if (appname.equalsIgnoreCase("Whatsapp")) {
-            if (anomaly.contains("contacts")) {
-                text += "<font color=#CC0000>***Current Context***</font><br>";
-                text += "Previous screen (Activity): Chat List<br>";
-                text += "Current screen (Activity): Select contact to compose a message<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Contact<br>";
-                text += "<br>";
-                text += "<font color=#CC0000>***Context of the most similar normal operation***</font><br>";
-                text += "NIL<br>";
+
+        detailBtn = (Button) findViewById(R.id.detail_btn);
+
+        detailBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (detail == null) {
+                    detail = getResources().getStringArray(R.array.detail);
+                    for (String detail_item : detail) {
+                        String[] detail_array = detail_item.split(",");
+                        String[] id_context = {detail_array[1],detail_array[2]};
+                        anomaly2detail.put(detail_array[0],id_context);
+                    }
+                }
+
+                String[] id_context = (String[]) anomaly2detail.get(anomaly);
+
+
+                dialog = new Dialog(AnomalyActvAdviser.this);
+                dialog.setContentView(R.layout.detaildialog);
+                dialog.setTitle(Html.fromHtml("<font color='#08457E'><b>Details of the Anomaly</font>"));
+
+
+                WebView webviewAbout = (WebView) dialog.findViewById(R.id.google_play);
+                webviewAbout.setWebViewClient(new WebViewClient());
+                webviewAbout.loadUrl("https://play.google.com/store/apps/details?id=" + id_context[0] + "&hl=en");
+
+                WebView webviewContext = (WebView) dialog.findViewById(R.id.context);
+                webviewContext.setWebViewClient(new WebViewClient());
+                webviewContext.loadUrl("file:///android_asset/" + id_context[1]);
+
+
+                if (dialog != null && !dialog.isShowing())
+                    dialog.show();
             }
-            else if (anomaly.contains("phone")) {
-//                text += "What Whatsapp is doing: <br>1. Start new game. <br>2. Make phone call to 61234567, which is not found in your contact list.";
-                text += "<font color=#CC0000>***Current Context***</font><br>";
-                text += "Previous screen (Activity): Chat List<br>";
-                text += "Current screen (Activity): Make a new call<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Contact<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;2. Phone Call: 61234567 (unknown)<br>";
-                text += "<br>";
-                text += "<font color=#CC0000>***Context of the most similar normal operation***</font><br>";
-                text += "Previous screen (Activity): Chat List<br>";
-                text += "Current screen (Activity): Make a new call<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Contact<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;2. Phone Call: 88486868 (Daddy)<br>";
-//                text += "Most recent sensitive APIs:<br>";
-//                text += "&nbsp;&nbsp;&nbsp;&nbsp;Call: new Intent(Intent.ACTION_CALL)<br><br>";
-            }else
-                text += "No further information.";
-        } else if (appname.equalsIgnoreCase("Facebook")) {
-            if (anomaly.contains("location")) {
-//                text += "This is to allow user to send his/her location to their friends from inside Facebook.";
-                text += "<font color=#CC0000>***Current Context***</font><br>";
-                text += "Previous screen (Activity): Home Screen<br>";
-                text += "Current screen (Activity): Create a new post<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Location<br>";
-                text += "<br>";
-                text += "<font color=#CC0000>***Context of the most similar normal operation***</font><br>";
-                text += "Previous screen (Activity): Home Screen<br>";
-                text += "Current screen (Activity): Check In<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Location<br>";
-            }
-            else
-                text += "No further information.";
-        } else if (appname.equalsIgnoreCase("Gmail")) {
-            if (anomaly.contains("calendar")) {
-//                text += "This is to allow user to access and modify calendar events from inside Gmail.";
-                text += "<font color=#CC0000>***Current Context***</font><br>";
-                text += "Previous screen (Activity): Inbox<br>";
-                text += "Current screen (Activity): Calendar<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Calendar<br>";
-                text += "<br>";
-                text += "<font color=#CC0000>***Context of the most similar normal operation***</font><br>";
-                text += "Previous screen (Activity): Receive a new invitation<br>";
-                text += "Current screen (Activity): Calendar<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Calendar<br>";
-            }
-            else if (anomaly.contains("emails")) {
-//                text += "What Gmail is doing: <br/>1. Create an email with subject - Lottery Winner! <br/>2. Read your address book. <br/>3. Send the email to everyone in your address book.";
-                text += "<font color=#CC0000>***Current Context***</font><br>";
-                text += "Previous screen (Activity): Inbox<br>";
-                text += "Current screen (Activity): Compose a new mail<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Address Book (Select all)<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;2. Internet connection (mail.google.com)<br>";
-                text += "<br>";
-                text += "<font color=#CC0000>***Context of the most similar normal operation***</font><br>";
-                text += "Previous screen (Activity): Inbox<br>";
-                text += "Current screen (Activity): Compose a new mail<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Address Book (Select bob@gmail.com)<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;2. Internet connection (mail.google.com)<br>";
-            }else
-                text += "No further information.";
-        } else if (appname.equalsIgnoreCase("Instagram")) {
-            if (anomaly.contains("camera")) {
-//                text += "This is to allow user to take pictures from inside Instagram.";
-                text += "<font color=#CC0000>***Current Context***</font><br>";
-                text += "Previous screen (Activity): Instagram Home Screen<br>";
-                text += "Current screen (Activity): Take a photo<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Camera<br>";
-                text += "<br>";
-                text += "<font color=#CC0000>***Context of the most similar normal operation***</font><br>";
-                text += "NIL<br>";
-            }else
-                text += "No further information.";
-        } else if (appname.equalsIgnoreCase("YouTube")) {
-            if (anomaly.contains("microphone")) {
-//                text += "This is to allow user to search videos using voice commands from inside YouTube.";
-                text += "<font color=#CC0000>***Current Context***</font><br>";
-                text += "Previous screen (Activity): Search Videos<br>";
-                text += "Current screen (Activity): Speak now<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Microphone<br>";
-                text += "<br>";
-                text += "<font color=#CC0000>***Context of the most similar normal operation***</font><br>";
-                text += "NIL<br>";
-            }else
-                text += "No further information.";
-        } else if (appname.equalsIgnoreCase("Clock")) {
-            if (anomaly.contains("geolocation")) {
-//                text += "What Clock is doing <br/>1. Read the time and your geolocation. <br/>2. Connect to website - www.worldtime.com. <br/>3. Send your geolocation to the website.";
-                text += "<font color=#CC0000>***Current Context***</font><br>";
-                text += "Previous screen (Activity): Alarm<br>";
-                text += "Current screen (Activity): Clock List<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Location<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;2. Internet connection (www.worldtime.com)<br>";
-                text += "<br>";
-                text += "<font color=#CC0000>***Context of the most similar normal operation***</font><br>";
-                text += "Previous screen (Activity): Clock List<br>";
-                text += "Current screen (Activity): Add a city<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Location<br>";
-            }else
-                text += "No further information.";
-        } else if (appname.equalsIgnoreCase("Sudoku")) {
-            if (anomaly.contains("sim")) {
-//                text += "What Suduko is doing: " + System.getProperty("line.separator") + " 1. Start a new game. <br/>2. Read your sim card info. <br/>3. Connect to website - www.abnormal.com. <br/>4. Send your sim card info to the website.";
-                text += "<font color=#CC0000>***Current Context***</font><br>";
-                text += "Previous screen (Activity): Home Screen<br>";
-                text += "Current screen (Activity): New Game<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Internet connection (www.abnormal.com)<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;2. SIM card<br>";
-                text += "<br>";
-                text += "<font color=#CC0000>***Context of the most similar normal operation***</font><br>";
-                text += "NIL<br>";
-            }else
-                text += "No further information.";
-        } else if (appname.equalsIgnoreCase("Candy")) {
-            if (anomaly.contains("contacts")) {
-//                text += "What Candy Crush is doing: <br/>1. Start new game. <br/>2. Read your contacts. <br/>3. Connect to website - www.hackme.com. <br/>4. Send your contacts to the website.";
-                text += "<font color=#CC0000>***Current Context***</font><br>";
-                text += "Previous screen (Activity): Home Screen<br>";
-                text += "Current screen (Activity): New Game<br>";
-                text += "Sensitive info being accessed:<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;1. Internet connection (www.hackme.com)<br>";
-                text += "&nbsp;&nbsp;&nbsp;&nbsp;2. Contact<br>";
-                text += "<br>";
-                text += "<font color=#CC0000>***Context of the most similar normal operation***</font><br>";
-                text += "NIL<br>";
-            }else
-                text += "No further information.";
-        } else {
-            text += "Unknown app - No further information.";
-        }
-        text += "<br></font>";
-//        text += "<br>";
-//        getDetails.setText(Html.fromHtml(text));
-        getDetails.setText(text);
-        makeTextViewResizable(getDetails, 0, "View More", true);
+        });
+
+
         uninstall = (Button) findViewById(R.id.uninstall);
         uninstall.setOnClickListener(this);
         kill = (Button) findViewById(R.id.kill);
@@ -415,12 +306,12 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
                         tv.setLayoutParams(tv.getLayoutParams());
                         tv.setText(Html.fromHtml(tv.getTag().toString()), TextView.BufferType.SPANNABLE);
                         tv.invalidate();
-                        makeTextViewResizable(tv, 30, "View Less", false);
+                        makeTextViewResizable(tv, 30, "Close", false);
                     } else {
                         tv.setLayoutParams(tv.getLayoutParams());
                         tv.setText(Html.fromHtml(tv.getTag().toString()), TextView.BufferType.SPANNABLE);
                         tv.invalidate();
-                        makeTextViewResizable(tv, 0, "View More", true);
+                        makeTextViewResizable(tv, 0, "Details of the anomaly", true);
                     }
                 }
             }, str.indexOf(spanableText), str.indexOf(spanableText) + spanableText.length(), 0);

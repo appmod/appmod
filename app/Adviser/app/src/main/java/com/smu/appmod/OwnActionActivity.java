@@ -3,7 +3,6 @@ package com.smu.appmod;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -16,9 +15,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import java.io.IOException;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
-import java.util.*;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class OwnActionActivity extends Activity {
     /**
@@ -26,8 +28,9 @@ public class OwnActionActivity extends Activity {
      */
     static String[] outsourcing = null;
     static Map anomaly2percentages = new HashMap<String, String[]>();
-
-    Button doNothing, uninstall, kill;
+    static String[] detail = null;
+    static Map anomaly2detail = new HashMap<String, String[]>();
+    Button doNothing, uninstall, kill, detailBtn;
     TextView text;
     UtilityClass utility;
     static String phone, date;
@@ -35,7 +38,8 @@ public class OwnActionActivity extends Activity {
     static String message, anomalyid;
     private static final String TAG = "OAA";
     ImageView image;
-    
+
+    Dialog dialog;
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(OwnActionActivity.this, MainActivity.class);
@@ -89,6 +93,36 @@ public class OwnActionActivity extends Activity {
         } else {
             image.setImageResource(R.drawable.app);
         }
+
+        detailBtn = (Button) findViewById(R.id.detail_adviee_btn);
+
+        detailBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (detail == null) {
+                    detail = getResources().getStringArray(R.array.detail);
+                    for (String detail_item : detail) {
+                        String[] detail_array = detail_item.split(",");
+                        String[] id_context = {detail_array[1],detail_array[2]};
+                        anomaly2detail.put(detail_array[0],id_context);
+                    }
+                }
+
+                String[] id_context = (String[]) anomaly2detail.get(message);
+
+
+                dialog = new Dialog(OwnActionActivity.this);
+                dialog.setContentView(R.layout.detaildialog_advisee);
+                dialog.setTitle(Html.fromHtml("<font color='#08457E'><b>Details of the Anomaly</font>"));
+
+
+                WebView webviewAbout = (WebView) dialog.findViewById(R.id.google_play);
+                webviewAbout.setWebViewClient(new WebViewClient());
+                webviewAbout.loadUrl("https://play.google.com/store/apps/details?id=" + id_context[0] + "&hl=en");
+
+                if (dialog != null && !dialog.isShowing())
+                    dialog.show();
+            }
+        });
 
         final DBManager dbManager;
         dbManager = new DBManager(OwnActionActivity.this);

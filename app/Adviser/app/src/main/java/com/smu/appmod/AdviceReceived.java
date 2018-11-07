@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -35,6 +38,10 @@ public class AdviceReceived extends Activity {
     ImageView image;
     private static final String TAG = "AR";
     private long mLastClickTime = 0;
+
+
+    static String[] detail = null;
+    static Map anomaly2detail = new HashMap<String, String[]>();
 
     @Override
     public void onDestroy() {
@@ -123,7 +130,7 @@ public class AdviceReceived extends Activity {
                 Button dialogDoNothing = (Button) dialog.findViewById(R.id.dialogdonothing);
                 Button dialogUninstall = (Button) dialog.findViewById(R.id.dialogButtonuninstall);
                 Button dialogButtonKill = (Button) dialog.findViewById(R.id.dialogButtonkill);
-
+                
                 String[] threePercentages = (String[]) anomaly2percentages.get(anomaly);
                 int cs_u = Integer.parseInt(threePercentages[0].substring(0, threePercentages[0].length() - 1));
                 int cs_k = Integer.parseInt(threePercentages[1].substring(0, threePercentages[1].length() - 1));
