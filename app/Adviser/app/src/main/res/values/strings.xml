@@ -63,6 +63,19 @@
         <item>Whatsapp is making phone calls to 61234567 (unknown).,50%,50%,0%</item>
         <item>YouTube is accessing the microphone of your device.,10%,40%,50%</item>
     </string-array>
+    <string-array name="detail">
+        <item>Candy Crush is reading your contacts and sending it to www.hackme.com.,com.king.candycrushsaga,candycrush_contact.html</item>
+        <item>Clock is accessing your geolocation and sending it out.,com.google.android.deskclock,clock_location.html</item>
+        <item>Facebook is accessing the location of your device.,com.facebook.katana,facebook_location.html</item>
+        <item>Gmail is modifying the calendar events of your device.,com.google.android.gm,gmail_calendar.html</item>
+        <item>Gmail is sending emails to everyone in your address book.,com.google.android.gm,gmail_email.html</item>
+        <item>Instagram is accessing the camera of your device.,com.instagram.android,instagram_camera.html</item>
+        <item>Sudoku is reading your sim card info and sending it to www.abnormal.com.,com.easybrain.sudoku.android,sudoku_sim.html</item>
+        <item>Whatsapp is accessing the contacts of your device.,com.whatsapp,whatsapp_contact.html</item>
+        <item>Whatsapp is making phone calls to 61234567 (unknown).,com.whatsapp,whatsapp_call.html</item>
+        <item>YouTube is accessing the microphone of your device.,com.google.android.youtube,youtube_microphone.html</item>
+    </string-array>
+    <string name="view_detail">Details of the anomaly</string>
     <string-array name="CountryCodes" >
         <item>+93,AF</item>
         <item>+355,AL</item>

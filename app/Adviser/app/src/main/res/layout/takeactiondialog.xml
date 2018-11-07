@@ -49,6 +49,20 @@
         android:textColor="#CC00"
         android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/detail_adviee_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#AEC6CF"
+        android:gravity="center"
+        android:text="@string/view_detail"
+        android:textColor="#08457E"
+        android:textSize="20sp" />
+
     <View
         android:id="@+id/helper"
         android:layout_width="match_parent"
@@ -109,5 +123,7 @@
             android:textColor="#FFFFFF" />
 
     </LinearLayout>
+
+
 
 </RelativeLayout>
