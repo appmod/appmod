@@ -64,26 +64,26 @@
         <item>YouTube is accessing the microphone of your device.,10%,40%,50%</item>
     </string-array>
     <string-array name="detail">
-        <item>Candy Crush is reading your contacts and sending it to www.hackme.com.,com.king.candycrushsaga,candycrush_contact.html</item>
-        <item>Clock is accessing your geolocation and sending it out.,com.google.android.deskclock,clock_location.html</item>
-        <item>Facebook is accessing the location of your device.,com.facebook.katana,facebook_location.html</item>
-        <item>Gmail is modifying the calendar events of your device.,com.google.android.gm,gmail_calendar.html</item>
-        <item>Gmail is sending emails to everyone in your address book.,com.google.android.gm,gmail_email.html</item>
-        <item>Instagram is accessing the camera of your device.,com.instagram.android,instagram_camera.html</item>
-        <item>Sudoku is reading your sim card info and sending it to www.abnormal.com.,com.easybrain.sudoku.android,sudoku_sim.html</item>
-        <item>Whatsapp is accessing the contacts of your device.,com.whatsapp,whatsapp_contact.html</item>
-        <item>Whatsapp is making phone calls to 61234567 (unknown).,com.whatsapp,whatsapp_call.html</item>
-        <item>YouTube is accessing the microphone of your device.,com.google.android.youtube,youtube_microphone.html</item>
-        <item>Bubble Shooter is reading your contacts and sending it to www.hackme.com.,bubbleshooter.orig,bubbleshooter_contact.html</item>
-        <item>Compass Galaxy is accessing your geolocation and sending it out.,pl.nenter.app.compass_app,compass_location.html</item>
-        <item>Linkedin is accessing the location of your device.,com.linkedin.android,linkedin_location.html</item>
-        <item>Microsoft Outlook is modifying the calendar events of your device.,com.microsoft.office.outlook,outlook_calendar.html</item>
-        <item>Microsoft Outlook is sending emails to everyone in your address book.,com.microsoft.office.outlook,outlook_email.html</item>
-        <item>Tumblr is accessing the camera of your device.,com.tumblr,tumblr_camera.html</item>
-        <item>Mahjong Titans is reading your sim card info and sending it to www.abnormal.com.,com.mirenad.mahjongtitans,mahjong_sim.html</item>
-        <item>Line is accessing the contacts of your device.,jp.naver.line.android,line_contact.html</item>
-        <item>Line is making phone calls to 61234567 (unknown).,jp.naver.line.android,line_call.html</item>
-        <item>VLC is accessing the microphone of your device.,org.videolan.vlc,vlc_microphone.html</item>
+        <item>Candy Crush is reading your contacts and sending it to www.hackme.com.,candycrush.html,candycrush_contact.html</item>
+        <item>Clock is accessing your geolocation and sending it out.,clock.html,clock_location.html</item>
+        <item>Facebook is accessing the location of your device.,facebook.html,facebook_location.html</item>
+        <item>Gmail is modifying the calendar events of your device.,gmail.html,gmail_calendar.html</item>
+        <item>Gmail is sending emails to everyone in your address book.,gmail.html,gmail_email.html</item>
+        <item>Instagram is accessing the camera of your device.,instagram.html,instagram_camera.html</item>
+        <item>Sudoku is reading your sim card info and sending it to www.abnormal.com.,sudoku.html,sudoku_sim.html</item>
+        <item>Whatsapp is accessing the contacts of your device.,whatsapp.html,whatsapp_contact.html</item>
+        <item>Whatsapp is making phone calls to 61234567 (unknown).,whatsapp.html,whatsapp_call.html</item>
+        <item>YouTube is accessing the microphone of your device.,youtube.html,youtube_microphone.html</item>
+        <item>Bubble Shooter is reading your contacts and sending it to www.hackme.com.,bubbleshooter.html,bubbleshooter_contact.html</item>
+        <item>Compass Galaxy is accessing your geolocation and sending it out.,compass.html,compass_location.html</item>
+        <item>Linkedin is accessing the location of your device.,linkedin.html,linkedin_location.html</item>
+        <item>Microsoft Outlook is modifying the calendar events of your device.,outlook.html,outlook_calendar.html</item>
+        <item>Microsoft Outlook is sending emails to everyone in your address book.,outlook.html,outlook_email.html</item>
+        <item>Tumblr is accessing the camera of your device.,tumblr.html,tumblr_camera.html</item>
+        <item>Mahjong Titans is reading your sim card info and sending it to www.abnormal.com.,mahjong.html,mahjong_sim.html</item>
+        <item>Line is accessing the contacts of your device.,line.html,line_contact.html</item>
+        <item>Line is making phone calls to 61234567 (unknown).,line.html,line_call.html</item>
+        <item>VLC is accessing the microphone of your device.,vlc.html,vlc_microphone.html</item>
     </string-array>
     <string name="view_detail">Details of the anomaly</string>
     <string-array name="CountryCodes" >

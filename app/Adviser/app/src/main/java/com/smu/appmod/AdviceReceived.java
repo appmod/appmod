@@ -148,26 +148,28 @@ public class AdviceReceived extends Activity {
                 Button dialogButtonKill = (Button) dialog.findViewById(R.id.dialogButtonkill);
                 
                 String[] threePercentages = (String[]) anomaly2percentages.get(anomaly);
-                int cs_u = Integer.parseInt(threePercentages[0].substring(0, threePercentages[0].length() - 1));
-                int cs_k = Integer.parseInt(threePercentages[1].substring(0, threePercentages[1].length() - 1));
-                int cs_d = Integer.parseInt(threePercentages[2].substring(0, threePercentages[2].length() - 1));
+                if (threePercentages != null) {
+                    int cs_u = Integer.parseInt(threePercentages[0].substring(0, threePercentages[0].length() - 1));
+                    int cs_k = Integer.parseInt(threePercentages[1].substring(0, threePercentages[1].length() - 1));
+                    int cs_d = Integer.parseInt(threePercentages[2].substring(0, threePercentages[2].length() - 1));
 
-                int flag = -1;
-                if (cs_u > cs_k && cs_u > cs_d) {
-                    flag = 0;
-                    dialogUninstall.setBackgroundColor(0xFFCC0000);
-                } else if (cs_k > cs_u && cs_k > cs_d) {
-                    flag = 1;
-                    dialogButtonKill .setBackgroundColor(0xFFCC0000);
-                } else if (cs_d > cs_u && cs_d > cs_k) {
-                    flag = 2;
-                    dialogDoNothing.setBackgroundColor(0xFFCC0000);
+                    int flag = -1;
+                    if (cs_u > cs_k && cs_u > cs_d) {
+                        flag = 0;
+                        dialogUninstall.setBackgroundColor(0xFFCC0000);
+                    } else if (cs_k > cs_u && cs_k > cs_d) {
+                        flag = 1;
+                        dialogButtonKill.setBackgroundColor(0xFFCC0000);
+                    } else if (cs_d > cs_u && cs_d > cs_k) {
+                        flag = 2;
+                        dialogDoNothing.setBackgroundColor(0xFFCC0000);
+                    }
+
+                    String desc = getString(R.string.os_desc);
+                    dialogUninstall.setText(dialogUninstall.getText() + "\n(" + threePercentages[0] + " " + desc);
+                    dialogDoNothing.setText(dialogDoNothing.getText() + "\n(" + threePercentages[2] + " " + desc);
+                    dialogButtonKill.setText(dialogButtonKill.getText() + "\n(" + threePercentages[1] + " " + desc);
                 }
-
-                String desc = getString(R.string.os_desc);
-                dialogUninstall.setText(dialogUninstall.getText() + "\n(" + threePercentages[0] + " " + desc);
-                dialogDoNothing.setText(dialogDoNothing.getText() + "\n(" + threePercentages[2] + " " + desc);
-                dialogButtonKill.setText(dialogButtonKill.getText() + "\n(" + threePercentages[1] + " " + desc);
 
                 TextView tv = (TextView) dialog.findViewById(R.id.text);
                 ImageView image = (ImageView) dialog.findViewById(R.id.app);

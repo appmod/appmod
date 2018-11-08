@@ -5,13 +5,22 @@
     android:layout_height="match_parent"
     tools:context="com.smu.appmod.GetAdvice">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
     <TextView
         android:id="@+id/about_app_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="About the app:"
+        android:text="About the app"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
         android:textColor="#CC0000"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -20,9 +29,12 @@
     <WebView
         android:id="@+id/google_play"
         android:layout_width="match_parent"
-        android:layout_height="298dp"
+        android:layout_height="0dp"
+        android:layout_weight="5.4"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/about_app_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:textColor="#CC00"
         android:textSize="20sp"
         tools:ignore="UnknownId" />
@@ -31,6 +43,8 @@
         android:id="@+id/helper"
         android:layout_width="match_parent"
         android:layout_height="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/google_play"
         android:background="#CC0000" />
@@ -38,10 +52,13 @@
     <TextView
         android:id="@+id/context_title"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/helper"
-        android:text="Context:"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Context"
         android:textColor="#CC0000"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -49,10 +66,38 @@
     <WebView
         android:id="@+id/context"
         android:layout_width="match_parent"
-        android:layout_height="162dp"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/context_title"
         android:textColor="#CC00"
         android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         tools:ignore="UnknownId" />
+
+    <View
+        android:id="@+id/helper2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/context"
+        android:background="#CC0000" />
+
+
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#08457E"
+            android:text="Close"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
 </RelativeLayout>

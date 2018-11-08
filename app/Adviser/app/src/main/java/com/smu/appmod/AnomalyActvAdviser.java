@@ -44,7 +44,7 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
     static Map anomaly2detail = new HashMap<String, String[]>();
 
     UtilityClass utility;
-    Button donothing, uninstall, kill, detailBtn;
+    Button donothing, uninstall, kill, detailBtn, closeBtn;
     static Context context;
     private DBManager dbManager;
     String anomaly, seeker_name, anomalyId;
@@ -130,12 +130,25 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
                 if (id_context != null) {
                     WebView webviewAbout = (WebView) dialog.findViewById(R.id.google_play);
                     webviewAbout.setWebViewClient(new WebViewClient());
-                    webviewAbout.loadUrl("https://play.google.com/store/apps/details?id=" + id_context[0] + "&hl=en");
+                    //webviewAbout.loadUrl("https://play.google.com/store/apps/details?id=" + id_context[0] + "&hl=en");
+                    webviewAbout.loadUrl("file:///android_asset/" + id_context[0]);
 
                     WebView webviewContext = (WebView) dialog.findViewById(R.id.context);
                     webviewContext.setWebViewClient(new WebViewClient());
                     webviewContext.loadUrl("file:///android_asset/" + id_context[1]);
                 }
+
+                closeBtn = (Button) dialog.findViewById(R.id.close_btn);
+                if (closeBtn != null) {
+                    closeBtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+                        }
+                    });
+                }
+
+
                 if (dialog != null && !dialog.isShowing())
                     dialog.show();
             }

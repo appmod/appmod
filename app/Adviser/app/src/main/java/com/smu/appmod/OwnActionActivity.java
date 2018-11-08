@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -30,7 +32,7 @@ public class OwnActionActivity extends Activity {
     static Map anomaly2percentages = new HashMap<String, String[]>();
     static String[] detail = null;
     static Map anomaly2detail = new HashMap<String, String[]>();
-    Button doNothing, uninstall, kill, detailBtn;
+    Button doNothing, uninstall, kill, detailBtn, closeBtn;
     TextView text;
     UtilityClass utility;
     static String phone, date;
@@ -73,7 +75,7 @@ public class OwnActionActivity extends Activity {
         text.setText(Html.fromHtml(str));
 
         image = (ImageView) findViewById(R.id.app);
-        String appname = message.split(" ")[0].trim(); 
+        String appname = message.split(" ")[0].trim();
         if (appname.equalsIgnoreCase("YouTube")) {
             image.setImageResource(R.drawable.app_yt);
         } else if (appname.equalsIgnoreCase("Facebook")) {
@@ -127,15 +129,32 @@ public class OwnActionActivity extends Activity {
 
 
                 dialog = new Dialog(OwnActionActivity.this);
-                dialog.setContentView(R.layout.detaildialog_advisee);
+                dialog.setContentView(R.layout.detaildialog);
+                dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
                 dialog.setTitle(Html.fromHtml("<font color='#08457E'><b>Details of the Anomaly</font>"));
 
-
-                WebView webviewAbout = (WebView) dialog.findViewById(R.id.google_play);
-                webviewAbout.setWebViewClient(new WebViewClient());
                 if (id_context != null) {
-                    webviewAbout.loadUrl("https://play.google.com/store/apps/details?id=" + id_context[0] + "&hl=en");
+                    WebView webviewAbout = (WebView) dialog.findViewById(R.id.google_play);
+                    webviewAbout.setWebViewClient(new WebViewClient());
+                    //webviewAbout.loadUrl("https://play.google.com/store/apps/details?id=" + id_context[0] + "&hl=en");
+                    webviewAbout.loadUrl("file:///android_asset/" + id_context[0]);
+
+                    WebView webviewContext = (WebView) dialog.findViewById(R.id.context);
+                    webviewContext.setWebViewClient(new WebViewClient());
+                    webviewContext.loadUrl("file:///android_asset/" + id_context[1]);
                 }
+
+
+                closeBtn = (Button) dialog.findViewById(R.id.close_btn);
+                if (closeBtn != null) {
+                    closeBtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+                        }
+                    });
+                }
+
                 if (dialog != null && !dialog.isShowing())
                     dialog.show();
             }
