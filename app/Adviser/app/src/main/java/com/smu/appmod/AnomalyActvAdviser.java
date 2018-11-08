@@ -16,6 +16,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -124,6 +125,7 @@ public class AnomalyActvAdviser extends Activity implements View.OnClickListener
 
                 dialog = new Dialog(AnomalyActvAdviser.this);
                 dialog.setContentView(R.layout.detaildialog);
+                dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
                 dialog.setTitle(Html.fromHtml("<font color='#08457E'><b>Details of the Anomaly</font>"));
 
 
