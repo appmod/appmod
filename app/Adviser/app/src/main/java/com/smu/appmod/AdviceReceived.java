@@ -141,12 +141,15 @@ public class AdviceReceived extends Activity {
                 }
                 dialog = new Dialog(AdviceReceived.this);
                 dialog.setContentView(R.layout.takeactiondialog);
+                dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
                 dialog.setTitle(Html.fromHtml("<font color='#08457E'><b>Take Action</font>"));
 
                 Button dialogDoNothing = (Button) dialog.findViewById(R.id.dialogdonothing);
                 Button dialogUninstall = (Button) dialog.findViewById(R.id.dialogButtonuninstall);
                 Button dialogButtonKill = (Button) dialog.findViewById(R.id.dialogButtonkill);
-                
+                Button dialogDetail = (Button) dialog.findViewById(R.id.detail_adviee_btn);
+                dialogDetail.setVisibility(View.GONE);
+
                 String[] threePercentages = (String[]) anomaly2percentages.get(anomaly);
                 if (threePercentages != null) {
                     int cs_u = Integer.parseInt(threePercentages[0].substring(0, threePercentages[0].length() - 1));
@@ -189,7 +192,23 @@ public class AdviceReceived extends Activity {
                     image.setImageResource(R.drawable.app_cr);
                 } else if (appname.equalsIgnoreCase("Sudoku")) {
                     image.setImageResource(R.drawable.app_sk);
-                } else {
+                } else if (appname.equalsIgnoreCase("Bubble")) {
+                    image.setImageResource(R.drawable.app_bubble);
+                } else if (appname.equalsIgnoreCase("Compass")) {
+                    image.setImageResource(R.drawable.app_compass);
+                } else if (appname.equalsIgnoreCase("Linkedin")) {
+                    image.setImageResource(R.drawable.app_linkedin);
+                } else if (appname.equalsIgnoreCase("Microsoft")) {
+                    image.setImageResource(R.drawable.app_outlook);
+                } else if (appname.equalsIgnoreCase("Tumblr")) {
+                    image.setImageResource(R.drawable.app_tumblr);
+                } else if (appname.equalsIgnoreCase("Mahjong")) {
+                    image.setImageResource(R.drawable.app_mahjong);
+                } else if (appname.equalsIgnoreCase("Line")) {
+                    image.setImageResource(R.drawable.app_line);
+                } else if (appname.equalsIgnoreCase("VLC")) {
+                    image.setImageResource(R.drawable.app_vlc);
+                }  else {
                     image.setImageResource(R.drawable.app);
                 }
                 tv.setText(Html.fromHtml("<font color=#08457E>What action do you want to take?</font>"));
