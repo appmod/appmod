@@ -43,6 +43,7 @@ public class AdviceReceived extends Activity {
     static String[] detail = null;
     static Map anomaly2detail = new HashMap<String, String[]>();
 
+
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -71,41 +72,7 @@ public class AdviceReceived extends Activity {
         date = intent.getStringExtra("date");
         image = (ImageView) findViewById(R.id.app);
         final String appname = anomaly.split(" ")[0].trim();
-        if (appname.equalsIgnoreCase("YouTube")) {
-            image.setImageResource(R.drawable.app_yt);
-        } else if (appname.equalsIgnoreCase("Facebook")) {
-            image.setImageResource(R.drawable.app_fb);
-        } else if (appname.equalsIgnoreCase("Instagram")) {
-            image.setImageResource(R.drawable.app_is);
-        } else if (appname.equalsIgnoreCase("Gmail")) {
-            image.setImageResource(R.drawable.app_gm);
-        } else if (appname.equalsIgnoreCase("Whatsapp")) {
-            image.setImageResource(R.drawable.app_wh);
-        } else if (appname.equalsIgnoreCase("Clock")) {
-            image.setImageResource(R.drawable.app_cl);
-        } else if (appname.equalsIgnoreCase("Candy")) {
-            image.setImageResource(R.drawable.app_cr);
-        } else if (appname.equalsIgnoreCase("Sudoku")) {
-            image.setImageResource(R.drawable.app_sk);
-        } else if (appname.equalsIgnoreCase("Bubble")) {
-            image.setImageResource(R.drawable.app_bubble);
-        } else if (appname.equalsIgnoreCase("Compass")) {
-            image.setImageResource(R.drawable.app_compass);
-        } else if (appname.equalsIgnoreCase("Linkedin")) {
-            image.setImageResource(R.drawable.app_linkedin);
-        } else if (appname.equalsIgnoreCase("Microsoft")) {
-            image.setImageResource(R.drawable.app_outlook);
-        } else if (appname.equalsIgnoreCase("Tumblr")) {
-            image.setImageResource(R.drawable.app_tumblr);
-        } else if (appname.equalsIgnoreCase("Mahjong")) {
-            image.setImageResource(R.drawable.app_mahjong);
-        } else if (appname.equalsIgnoreCase("Line")) {
-            image.setImageResource(R.drawable.app_line);
-        } else if (appname.equalsIgnoreCase("VLC")) {
-            image.setImageResource(R.drawable.app_vlc);
-        } else {
-            image.setImageResource(R.drawable.app);
-        }
+        Helper.setAppImage(image, appname);
         dbManager = new DBManager(this);
         dbManager.open();
         dialog = new Dialog(this);
@@ -176,41 +143,7 @@ public class AdviceReceived extends Activity {
 
                 TextView tv = (TextView) dialog.findViewById(R.id.text);
                 ImageView image = (ImageView) dialog.findViewById(R.id.app);
-                if (appname.equalsIgnoreCase("YouTube")) {
-                    image.setImageResource(R.drawable.app_yt);
-                } else if (appname.equalsIgnoreCase("Facebook")) {
-                    image.setImageResource(R.drawable.app_fb);
-                } else if (appname.equalsIgnoreCase("Instagram")) {
-                    image.setImageResource(R.drawable.app_is);
-                } else if (appname.equalsIgnoreCase("Gmail")) {
-                    image.setImageResource(R.drawable.app_gm);
-                } else if (appname.equalsIgnoreCase("Whatsapp")) {
-                    image.setImageResource(R.drawable.app_wh);
-                } else if (appname.equalsIgnoreCase("Clock")) {
-                    image.setImageResource(R.drawable.app_cl);
-                } else if (appname.equalsIgnoreCase("Candy")) {
-                    image.setImageResource(R.drawable.app_cr);
-                } else if (appname.equalsIgnoreCase("Sudoku")) {
-                    image.setImageResource(R.drawable.app_sk);
-                } else if (appname.equalsIgnoreCase("Bubble")) {
-                    image.setImageResource(R.drawable.app_bubble);
-                } else if (appname.equalsIgnoreCase("Compass")) {
-                    image.setImageResource(R.drawable.app_compass);
-                } else if (appname.equalsIgnoreCase("Linkedin")) {
-                    image.setImageResource(R.drawable.app_linkedin);
-                } else if (appname.equalsIgnoreCase("Microsoft")) {
-                    image.setImageResource(R.drawable.app_outlook);
-                } else if (appname.equalsIgnoreCase("Tumblr")) {
-                    image.setImageResource(R.drawable.app_tumblr);
-                } else if (appname.equalsIgnoreCase("Mahjong")) {
-                    image.setImageResource(R.drawable.app_mahjong);
-                } else if (appname.equalsIgnoreCase("Line")) {
-                    image.setImageResource(R.drawable.app_line);
-                } else if (appname.equalsIgnoreCase("VLC")) {
-                    image.setImageResource(R.drawable.app_vlc);
-                }  else {
-                    image.setImageResource(R.drawable.app);
-                }
+                Helper.setAppImage(image, appname);
                 tv.setText(Html.fromHtml("<font color=#08457E>What action do you want to take?</font>"));
                 dialogDoNothing.setOnClickListener(new View.OnClickListener() {
                     @Override
