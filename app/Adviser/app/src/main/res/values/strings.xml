@@ -63,6 +63,11 @@
         <item>Whatsapp is making phone calls to 61234567 (unknown).,50%,50%,0%</item>
         <item>YouTube is accessing the microphone of your device.,10%,40%,50%</item>
     </string-array>
+    <string-array name="ownaction">
+        <item>Messenger is adding a calendar event to your device.</item>
+        <item>Happy Color is reading your sim card info and sending it to www.hackme.com.</item>
+        <item>Google Play Movies and TV is accessing the microphone of your device.</item>
+    </string-array>
     <string-array name="detail">
         <item>Candy Crush is reading your contacts and sending it to www.hackme.com.,candycrush.html,candycrush_contact.html</item>
         <item>Clock is accessing your geolocation and sending it out.,clock.html,clock_location.html</item>
@@ -86,14 +91,14 @@
         <item>VLC is accessing the microphone of your device.,vlc.html,vlc_microphone.html</item>
         <item>My Talking Tom is accessing the contacts of your device and sending it to www.abnormal.com.,mytalkingtom.html,mytalkingtom_contact.html</item>
         <item>Calculator is accessing the location of your device.,calculator.html,calculator_location.html</item>
-        <item>Snapchat is accessing your geolocation of your device.,snapchat.html,snapchat_location.html</item>
+        <item>Google+ is accessing your geolocation of your device.,googleplus.html,googleplus_location.html</item>
         <item>Messenger is adding a calendar event to your device.,messenger.html,messenger_calendar.html</item>
         <item>Messenger is sending SMS messages to 97752222 (unknown).,messenger.html,messenger_contact.html</item>
         <item>Google+ is accessing the camera of your device.,googleplus.html,googleplus_camera.html</item>
         <item>Happy Color is reading your sim card info and sending it to www.hackme.com.,happycolor.html,happycolor_sim.html</item>
         <item>Skype is accessing the contacts of your device.,skype.html,skype_contact.html</item>
         <item>Skype is making phone calls to 97752222 (unknown).,skype.html,skype_call.html</item>
-        <item>MX Player is accessing the microphone of your device.,mxplayer.html,mxplayer_microphone.html</item>
+        <item>Google Play Movies and TV is accessing the microphone of your device.,googleplay.html,googleplay_microphone.html</item>
     </string-array>
     <string name="view_detail">Details of the anomaly</string>
     <string-array name="CountryCodes" >

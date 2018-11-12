@@ -19,6 +19,9 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+
 import android.widget.ImageView;
 
 public class GetAdvice extends Activity {
@@ -31,6 +34,8 @@ public class GetAdvice extends Activity {
     ImageView image;
     private static final String TAG = "GA";
 
+    static Set<String> ownActionSet = new HashSet<String>();
+    static String[] ownactionStrs = null;
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -42,6 +47,13 @@ public class GetAdvice extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        if (ownactionStrs == null) {
+            ownactionStrs = getResources().getStringArray(R.array.ownaction);
+            for (String str : ownactionStrs) {
+                ownActionSet.add(str);
+            }
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.getadvice);
         getActionBar().setIcon(R.drawable.icon);
@@ -60,6 +72,11 @@ public class GetAdvice extends Activity {
                 "<font color=#08457E> by clicking on the button below.</font> ";
         text.setText(Html.fromHtml(str));
         getadvice_btn = (Button) findViewById(R.id.getadvice);
+
+        if (ownActionSet.contains(message)) {
+            getadvice_btn.setVisibility(View.GONE);
+        }
+
         ownaction_btn = (Button) findViewById(R.id.ownaction);
         getadvice_btn.setOnClickListener(new View.OnClickListener() {
                                              public void onClick(View view) {
