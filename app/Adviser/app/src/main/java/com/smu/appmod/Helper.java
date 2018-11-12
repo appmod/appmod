@@ -52,6 +52,8 @@ public class Helper {
             image.setImageResource(R.drawable.app_skype);
         } else if (appname.equalsIgnoreCase("MX")) {
             image.setImageResource(R.drawable.app_mxplayer);
+        } else if (appname.equalsIgnoreCase("Google")) {
+            image.setImageResource(R.drawable.app_googleplay);
         } else {
             image.setImageResource(R.drawable.app);
         }
