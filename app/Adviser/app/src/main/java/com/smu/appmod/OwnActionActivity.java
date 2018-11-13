@@ -41,12 +41,23 @@ public class OwnActionActivity extends Activity {
     private static final String TAG = "OAA";
     ImageView image;
 
-    Dialog dialog;
+    Dialog dialog, dialog1;
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(OwnActionActivity.this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (progressDialog != null) {
+            progressDialog.dismiss();
+        }
+        if (dialog1 != null) {
+            dialog1.dismiss();
+        }
     }
 
     @Override
@@ -217,7 +228,6 @@ public class OwnActionActivity extends Activity {
         @Override
         protected void onPostExecute(Boolean aBoolean) {
             super.onPostExecute(aBoolean);
-            final Dialog dialog1;
             dialog1 = new Dialog(OwnActionActivity.this);
             dialog1.setContentView(R.layout.actioncompleteddialog);
             dialog1.setTitle(Html.fromHtml("<font color='#08457E'><b>Action Completed!</font>"));
