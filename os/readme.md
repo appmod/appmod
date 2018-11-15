@@ -94,3 +94,14 @@ W [Please refer Section 5 of ISSTA 2018 paper at https://github.com/lebuitienduy
 adb push appmod/os/sdcard/appmod_models/* /sdcard/appmod_models/
 
 
+# An complie error on a desktop with Ubuntu 18.04
+```
+error:flex-2.5.39: loadlocale.c:130: _nl_intern_locale_data: Assertion "cnt < (sizeof (_nl_value_type_LC_TIME) / sizeof (_nl_value_type_LC_TIME[0]))' failed. Aborted (core dumped)"
+```
+
+## Solution: 
+
+export LC_ALL=C
+
+
+
