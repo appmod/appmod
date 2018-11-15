@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (C) 2011 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,28 +25,31 @@
 #include "art_method-inl.h"
 #include "base/stringpiece.h"
 #include "class_linker-inl.h"
+#include "class_root.h"
 #include "debugger.h"
-#include "dex_file-inl.h"
-#include "dex_file_annotations.h"
-#include "dex_instruction.h"
+#include "dex/class_accessor-inl.h"
+#include "dex/descriptors_names.h"
+#include "dex/dex_file-inl.h"
+#include "dex/dex_file_exception_helpers.h"
+#include "dex/dex_instruction.h"
 #include "entrypoints/runtime_asm_entrypoints.h"
 #include "gc/accounting/card_table-inl.h"
 #include "interpreter/interpreter.h"
 #include "jit/jit.h"
 #include "jit/jit_code_cache.h"
 #include "jit/profiling_info.h"
-#include "jni_internal.h"
+#include "jni/jni_internal.h"
 #include "mirror/class-inl.h"
 #include "mirror/class_ext.h"
 #include "mirror/executable.h"
-#include "mirror/object_array-inl.h"
 #include "mirror/object-inl.h"
+#include "mirror/object_array-inl.h"
 #include "mirror/string.h"
 #include "oat_file-inl.h"
+#include "quicken_info.h"
 #include "runtime_callbacks.h"
 #include "scoped_thread_state_change-inl.h"
 #include "vdex_file.h"
-#include "well_known_classes.h"
 
 namespace art {
 
@@ -57,17 +60,15 @@ extern "C" void art_quick_invoke_stub(ArtMethod*, uint32_t*, uint32_t, Thread*, 
 extern "C" void art_quick_invoke_static_stub(ArtMethod*, uint32_t*, uint32_t, Thread*, JValue*,
                                              const char*);
 
-DEFINE_RUNTIME_DEBUG_FLAG(ArtMethod, kCheckDeclaringClassState);
-
 // Enforce that we he have the right index for runtime methods.
-static_assert(ArtMethod::kRuntimeMethodDexMethodIndex == DexFile::kDexNoIndex,
+static_assert(ArtMethod::kRuntimeMethodDexMethodIndex == dex::kDexNoIndex,
               "Wrong runtime-method dex method index");
 
 ArtMethod* ArtMethod::GetCanonicalMethod(PointerSize pointer_size) {
   if (LIKELY(!IsDefault())) {
     return this;
   } else {
-    mirror::Class* declaring_class = GetDeclaringClass();
+    ObjPtr<mirror::Class> declaring_class = GetDeclaringClass();
     DCHECK(declaring_class->IsInterface());
     ArtMethod* ret = declaring_class->FindInterfaceMethod(declaring_class->GetDexCache(),
                                                           GetDexMethodIndex(),
@@ -136,17 +137,6 @@ uint16_t ArtMethod::FindObsoleteDexClassDefIndex() {
   return dex_file->GetIndexForClassDef(*class_def);
 }
 
-mirror::String* ArtMethod::GetNameAsString(Thread* self) {
-  CHECK(!IsProxyMethod());
-  StackHandleScope<1> hs(self);
-  Handle<mirror::DexCache> dex_cache(hs.NewHandle(GetDexCache()));
-  auto* dex_file = dex_cache->GetDexFile();
-  uint32_t dex_method_idx = GetDexMethodIndex();
-  const DexFile::MethodId& method_id = dex_file->GetMethodId(dex_method_idx);
-  return Runtime::Current()->GetClassLinker()->ResolveString(*dex_file, method_id.name_idx_,
-                                                             dex_cache);
-}
-
 void ArtMethod::ThrowInvocationTimeError() {
   DCHECK(!IsInvokable());
   // NOTE: IsDefaultConflicting must be first since the actual method might or might not be abstract
@@ -167,6 +157,8 @@ InvokeType ArtMethod::GetInvokeType() {
     return kInterface;
   } else if (IsDirect()) {
     return kDirect;
+  } else if (IsPolymorphicSignature()) {
+    return kPolymorphic;
   } else {
     return kVirtual;
   }
@@ -206,8 +198,8 @@ ArtMethod* ArtMethod::FindOverriddenMethod(PointerSize pointer_size) {
   if (IsStatic()) {
     return nullptr;
   }
-  mirror::Class* declaring_class = GetDeclaringClass();
-  mirror::Class* super_class = declaring_class->GetSuperClass();
+  ObjPtr<mirror::Class> declaring_class = GetDeclaringClass();
+  ObjPtr<mirror::Class> super_class = declaring_class->GetSuperClass();
   uint16_t method_index = GetMethodIndex();
   ArtMethod* result = nullptr;
   // Did this method override a super class method? If so load the result from the super class'
@@ -222,7 +214,7 @@ ArtMethod* ArtMethod::FindOverriddenMethod(PointerSize pointer_size) {
     } else {
       mirror::IfTable* iftable = GetDeclaringClass()->GetIfTable();
       for (size_t i = 0; i < iftable->Count() && result == nullptr; i++) {
-        mirror::Class* interface = iftable->GetInterface(i);
+        ObjPtr<mirror::Class> interface = iftable->GetInterface(i);
         for (ArtMethod& interface_method : interface->GetVirtualMethods(pointer_size)) {
           if (HasSameNameAndSignature(interface_method.GetInterfaceMethodIfProxy(pointer_size))) {
             result = &interface_method;
@@ -259,21 +251,21 @@ uint32_t ArtMethod::FindDexMethodIndexInOtherDexFile(const DexFile& other_dexfil
       return other_dexfile.GetIndexForMethodId(*other_mid);
     }
   }
-  return DexFile::kDexNoIndex;
+  return dex::kDexNoIndex;
 }
 
 uint32_t ArtMethod::FindCatchBlock(Handle<mirror::Class> exception_type,
                                    uint32_t dex_pc, bool* has_no_move_exception) {
-  const DexFile::CodeItem* code_item = GetCodeItem();
   // Set aside the exception while we resolve its type.
   Thread* self = Thread::Current();
   StackHandleScope<1> hs(self);
   Handle<mirror::Throwable> exception(hs.NewHandle(self->GetException()));
   self->ClearException();
   // Default to handler not found.
-  uint32_t found_dex_pc = DexFile::kDexNoIndex;
+  uint32_t found_dex_pc = dex::kDexNoIndex;
   // Iterate over the catch handlers associated with dex_pc.
-  for (CatchHandlerIterator it(*code_item, dex_pc); it.HasNext(); it.Next()) {
+  CodeItemDataAccessor accessor(DexInstructionData());
+  for (CatchHandlerIterator it(accessor, dex_pc); it.HasNext(); it.Next()) {
     dex::TypeIndex iter_type_idx = it.GetHandlerTypeIndex();
     // Catch all case
     if (!iter_type_idx.IsValid()) {
@@ -281,7 +273,7 @@ uint32_t ArtMethod::FindCatchBlock(Handle<mirror::Class> exception_type,
       break;
     }
     // Does this catch exception type apply?
-    mirror::Class* iter_exception_type = GetClassFromTypeIndex(iter_type_idx, true /* resolve */);
+    ObjPtr<mirror::Class> iter_exception_type = ResolveClassFromTypeIndex(iter_type_idx);
     if (UNLIKELY(iter_exception_type == nullptr)) {
       // Now have a NoClassDefFoundError as exception. Ignore in case the exception class was
       // removed by a pro-guard like tool.
@@ -297,10 +289,9 @@ uint32_t ArtMethod::FindCatchBlock(Handle<mirror::Class> exception_type,
       break;
     }
   }
-  if (found_dex_pc != DexFile::kDexNoIndex) {
-    const Instruction* first_catch_instr =
-        Instruction::At(&code_item->insns_[found_dex_pc]);
-    *has_no_move_exception = (first_catch_instr->Opcode() != Instruction::MOVE_EXCEPTION);
+  if (found_dex_pc != dex::kDexNoIndex) {
+    const Instruction& first_catch_instr = accessor.InstructionAt(found_dex_pc);
+    *has_no_move_exception = (first_catch_instr.Opcode() != Instruction::MOVE_EXCEPTION);
   }
   // Put the exception back.
   if (exception != nullptr) {
@@ -325,12 +316,11 @@ void ArtMethod::Invoke(Thread* self, uint32_t* args, uint32_t args_size, JValue*
   // Push a transition back into managed code onto the linked list in thread.
   ManagedStack fragment;
   self->PushManagedStackFragment(&fragment);
-
+    
   
-
   appmod_guarding(PrettyMethod().c_str(), self->GetTid());
 
-  
+
   Runtime* runtime = Runtime::Current();
   // Call the invoke stub, passing everything as arguments.
   // If the runtime is not yet started or it is required by the debugger, then perform the
@@ -351,14 +341,13 @@ void ArtMethod::Invoke(Thread* self, uint32_t* args, uint32_t args_size, JValue*
 
     constexpr bool kLogInvocationStartAndReturn = false;
     bool have_quick_code = GetEntryPointFromQuickCompiledCode() != nullptr;
-
-    if (LIKELY(have_quick_code)) {        
+    if (LIKELY(have_quick_code)) {
       if (kLogInvocationStartAndReturn) {
         LOG(INFO) << StringPrintf(
             "Invoking '%s' quick code=%p static=%d", PrettyMethod().c_str(),
             GetEntryPointFromQuickCompiledCode(), static_cast<int>(IsStatic() ? 1 : 0));
       }
-      
+
       // Ensure that we won't be accidentally calling quick compiled code when -Xint.
       if (kIsDebugBuild && runtime->GetInstrumentation()->IsForcedInterpretOnly()) {
         CHECK(!runtime->UseJitCompilation());
@@ -397,13 +386,9 @@ void ArtMethod::Invoke(Thread* self, uint32_t* args, uint32_t args_size, JValue*
   self->PopManagedStackFragment(fragment);
 }
 
-const void* ArtMethod::RegisterNative(const void* native_method, bool is_fast) {
+const void* ArtMethod::RegisterNative(const void* native_method) {
   CHECK(IsNative()) << PrettyMethod();
-  CHECK(!IsFastNative()) << PrettyMethod();
   CHECK(native_method != nullptr) << PrettyMethod();
-  if (is_fast) {
-    AddAccessFlags(kAccFastNative);
-  }
   void* new_native_method = nullptr;
   Runtime::Current()->GetRuntimeCallbacks()->RegisterNativeMethod(this,
                                                                   native_method,
@@ -413,7 +398,7 @@ const void* ArtMethod::RegisterNative(const void* native_method, bool is_fast) {
 }
 
 void ArtMethod::UnregisterNative() {
-  CHECK(IsNative() && !IsFastNative()) << PrettyMethod();
+  CHECK(IsNative()) << PrettyMethod();
   // restore stub to lookup native pointer via dlsym
   SetEntryPointFromJni(GetJniDlsymLookupStub());
 }
@@ -422,58 +407,30 @@ bool ArtMethod::IsOverridableByDefaultMethod() {
   return GetDeclaringClass()->IsInterface();
 }
 
-bool ArtMethod::IsAnnotatedWithFastNative() {
-  return IsAnnotatedWith(WellKnownClasses::dalvik_annotation_optimization_FastNative,
-                         DexFile::kDexVisibilityBuild,
-                         /* lookup_in_resolved_boot_classes */ true);
-}
-
-bool ArtMethod::IsAnnotatedWithCriticalNative() {
-  return IsAnnotatedWith(WellKnownClasses::dalvik_annotation_optimization_CriticalNative,
-                         DexFile::kDexVisibilityBuild,
-                         /* lookup_in_resolved_boot_classes */ true);
-}
-
-bool ArtMethod::IsAnnotatedWith(jclass klass,
-                                uint32_t visibility,
-                                bool lookup_in_resolved_boot_classes) {
-  Thread* self = Thread::Current();
-  ScopedObjectAccess soa(self);
-  StackHandleScope<1> shs(self);
-
-  ObjPtr<mirror::Class> annotation = soa.Decode<mirror::Class>(klass);
-  DCHECK(annotation->IsAnnotation());
-  Handle<mirror::Class> annotation_handle(shs.NewHandle(annotation));
-
-  return annotations::IsMethodAnnotationPresent(
-      this, annotation_handle, visibility, lookup_in_resolved_boot_classes);
+bool ArtMethod::IsPolymorphicSignature() {
+  // Methods with a polymorphic signature have constraints that they
+  // are native and varargs and belong to either MethodHandle or VarHandle.
+  if (!IsNative() || !IsVarargs()) {
+    return false;
+  }
+  ObjPtr<mirror::ObjectArray<mirror::Class>> class_roots =
+      Runtime::Current()->GetClassLinker()->GetClassRoots();
+  ObjPtr<mirror::Class> cls = GetDeclaringClass();
+  return (cls == GetClassRoot<mirror::MethodHandle>(class_roots) ||
+          cls == GetClassRoot<mirror::VarHandle>(class_roots));
 }
 
 static uint32_t GetOatMethodIndexFromMethodIndex(const DexFile& dex_file,
                                                  uint16_t class_def_idx,
                                                  uint32_t method_idx) {
-  const DexFile::ClassDef& class_def = dex_file.GetClassDef(class_def_idx);
-  const uint8_t* class_data = dex_file.GetClassData(class_def);
-  CHECK(class_data != nullptr);
-  ClassDataItemIterator it(dex_file, class_data);
-  it.SkipAllFields();
-  // Process methods
-  size_t class_def_method_index = 0;
-  while (it.HasNextDirectMethod()) {
-    if (it.GetMemberIndex() == method_idx) {
+  ClassAccessor accessor(dex_file, class_def_idx);
+  uint32_t class_def_method_index = 0u;
+  for (const ClassAccessor::Method& method : accessor.GetMethods()) {
+    if (method.GetIndex() == method_idx) {
       return class_def_method_index;
     }
     class_def_method_index++;
-    it.Next();
   }
-  while (it.HasNextVirtualMethod()) {
-    if (it.GetMemberIndex() == method_idx) {
-      return class_def_method_index;
-    }
-    class_def_method_index++;
-    it.Next();
-  }
-  DCHECK(!it.HasNext());
   LOG(FATAL) << "Failed to find method index " << method_idx << " in " << dex_file.GetLocation();
   UNREACHABLE();
 }
@@ -530,7 +487,7 @@ static const OatFile::OatMethod FindOatMethodFor(ArtMethod* method,
   }
   // Although we overwrite the trampoline of non-static methods, we may get here via the resolution
   // method for direct methods (or virtual methods made direct).
-  mirror::Class* declaring_class = method->GetDeclaringClass();
+  ObjPtr<mirror::Class> declaring_class = method->GetDeclaringClass();
   size_t oat_method_index;
   if (method->IsStatic() || method->IsDirect()) {
     // Simple case where the oat method index was stashed at load time.
@@ -576,8 +533,8 @@ bool ArtMethod::EqualParameters(Handle<mirror::ObjectArray<mirror::Class>> param
   }
   auto* cl = Runtime::Current()->GetClassLinker();
   for (size_t i = 0; i < count; ++i) {
-    auto type_idx = proto_params->GetTypeItem(i).type_idx_;
-    auto* type = cl->ResolveType(type_idx, this);
+    dex::TypeIndex type_idx = proto_params->GetTypeItem(i).type_idx_;
+    ObjPtr<mirror::Class> type = cl->ResolveType(type_idx, this);
     if (type == nullptr) {
       Thread::Current()->AssertPendingException();
       return false;
@@ -589,23 +546,32 @@ bool ArtMethod::EqualParameters(Handle<mirror::ObjectArray<mirror::Class>> param
   return true;
 }
 
-const uint8_t* ArtMethod::GetQuickenedInfo(PointerSize pointer_size) {
-  if (kIsVdexEnabled) {
-    const DexFile& dex_file = GetDeclaringClass()->GetDexFile();
-    const OatFile::OatDexFile* oat_dex_file = dex_file.GetOatDexFile();
-    if (oat_dex_file == nullptr || (oat_dex_file->GetOatFile() == nullptr)) {
-      return nullptr;
-    }
-    return oat_dex_file->GetOatFile()->GetVdexFile()->GetQuickenedInfoOf(
-        dex_file, GetCodeItemOffset());
-  } else {
-    bool found = false;
-    OatFile::OatMethod oat_method = FindOatMethodFor(this, pointer_size, &found);
-    if (!found || (oat_method.GetQuickCode() != nullptr)) {
-      return nullptr;
-    }
-    return oat_method.GetVmapTable();
+ArrayRef<const uint8_t> ArtMethod::GetQuickenedInfo() {
+  const DexFile& dex_file = GetDeclaringClass()->GetDexFile();
+  const OatDexFile* oat_dex_file = dex_file.GetOatDexFile();
+  if (oat_dex_file == nullptr || (oat_dex_file->GetOatFile() == nullptr)) {
+    return ArrayRef<const uint8_t>();
   }
+  return oat_dex_file->GetOatFile()->GetVdexFile()->GetQuickenedInfoOf(dex_file,
+                                                                       GetDexMethodIndex());
+}
+
+uint16_t ArtMethod::GetIndexFromQuickening(uint32_t dex_pc) {
+  ArrayRef<const uint8_t> data = GetQuickenedInfo();
+  if (data.empty()) {
+    return DexFile::kDexNoIndex16;
+  }
+  QuickenInfoTable table(data);
+  uint32_t quicken_index = 0;
+  for (const DexInstructionPcPair& pair : DexInstructions()) {
+    if (pair.DexPc() == dex_pc) {
+      return table.GetData(quicken_index);
+    }
+    if (QuickenInfoTable::NeedsIndexForInstruction(&pair.Inst())) {
+      ++quicken_index;
+    }
+  }
+  return DexFile::kDexNoIndex16;
 }
 
 const OatQuickMethodHeader* ArtMethod::GetOatQuickMethodHeader(uintptr_t pc) {
@@ -622,11 +588,6 @@ const OatQuickMethodHeader* ArtMethod::GetOatQuickMethodHeader(uintptr_t pc) {
   CHECK(existing_entry_point != nullptr) << PrettyMethod() << "@" << this;
   ClassLinker* class_linker = runtime->GetClassLinker();
 
-  if (class_linker->IsQuickGenericJniStub(existing_entry_point)) {
-    // The generic JNI does not have any method header.
-    return nullptr;
-  }
-
   if (existing_entry_point == GetQuickProxyInvokeHandler()) {
     DCHECK(IsProxyMethod() && !IsConstructor());
     // The proxy entry point does not have any method header.
@@ -634,7 +595,8 @@ const OatQuickMethodHeader* ArtMethod::GetOatQuickMethodHeader(uintptr_t pc) {
   }
 
   // Check whether the current entry point contains this pc.
-  if (!class_linker->IsQuickResolutionStub(existing_entry_point) &&
+  if (!class_linker->IsQuickGenericJniStub(existing_entry_point) &&
+      !class_linker->IsQuickResolutionStub(existing_entry_point) &&
       !class_linker->IsQuickToInterpreterBridge(existing_entry_point)) {
     OatQuickMethodHeader* method_header =
         OatQuickMethodHeader::FromEntryPoint(existing_entry_point);
@@ -667,19 +629,13 @@ const OatQuickMethodHeader* ArtMethod::GetOatQuickMethodHeader(uintptr_t pc) {
   OatFile::OatMethod oat_method =
       FindOatMethodFor(this, class_linker->GetImagePointerSize(), &found);
   if (!found) {
-    if (class_linker->IsQuickResolutionStub(existing_entry_point)) {
-      // We are running the generic jni stub, but the entry point of the method has not
-      // been updated yet.
-      DCHECK_EQ(pc, 0u) << "Should be a downcall";
-      DCHECK(IsNative());
-      return nullptr;
-    }
-    if (existing_entry_point == GetQuickInstrumentationEntryPoint()) {
-      // We are running the generic jni stub, but the method is being instrumented.
-      // NB We would normally expect the pc to be zero but we can have non-zero pc's if
-      // instrumentation is installed or removed during the call which is using the generic jni
-      // trampoline.
-      DCHECK(IsNative());
+    if (IsNative()) {
+      // We are running the GenericJNI stub. The entrypoint may point
+      // to different entrypoints or to a JIT-compiled JNI stub.
+      DCHECK(class_linker->IsQuickGenericJniStub(existing_entry_point) ||
+             class_linker->IsQuickResolutionStub(existing_entry_point) ||
+             existing_entry_point == GetQuickInstrumentationEntryPoint() ||
+             (jit != nullptr && jit->GetCodeCache()->ContainsPc(existing_entry_point)));
       return nullptr;
     }
     // Only for unit tests.
@@ -731,19 +687,38 @@ bool ArtMethod::HasAnyCompiledCode() {
   return GetOatMethodQuickCode(runtime->GetClassLinker()->GetImagePointerSize()) != nullptr;
 }
 
+void ArtMethod::SetNotIntrinsic() {
+  if (!IsIntrinsic()) {
+    return;
+  }
+
+  // Query the hidden API access flags of the intrinsic.
+  HiddenApiAccessFlags::ApiList intrinsic_api_list = GetHiddenApiAccessFlags();
+
+  // Clear intrinsic-related access flags.
+  ClearAccessFlags(kAccIntrinsic | kAccIntrinsicBits);
+
+  // Re-apply hidden API access flags now that the method is not an intrinsic.
+  SetAccessFlags(HiddenApiAccessFlags::EncodeForRuntime(GetAccessFlags(), intrinsic_api_list));
+  DCHECK_EQ(GetHiddenApiAccessFlags(), intrinsic_api_list);
+}
+
+
 void ArtMethod::CopyFrom(ArtMethod* src, PointerSize image_pointer_size) {
   memcpy(reinterpret_cast<void*>(this), reinterpret_cast<const void*>(src),
          Size(image_pointer_size));
   declaring_class_ = GcRoot<mirror::Class>(const_cast<ArtMethod*>(src)->GetDeclaringClass());
 
   // If the entry point of the method we are copying from is from JIT code, we just
-  // put the entry point of the new method to interpreter. We could set the entry point
-  // to the JIT code, but this would require taking the JIT code cache lock to notify
-  // it, which we do not want at this level.
+  // put the entry point of the new method to interpreter or GenericJNI. We could set
+  // the entry point to the JIT code, but this would require taking the JIT code cache
+  // lock to notify it, which we do not want at this level.
   Runtime* runtime = Runtime::Current();
   if (runtime->UseJitCompilation()) {
     if (runtime->GetJit()->GetCodeCache()->ContainsPc(GetEntryPointFromQuickCompiledCode())) {
-      SetEntryPointFromQuickCompiledCodePtrSize(GetQuickToInterpreterBridge(), image_pointer_size);
+      SetEntryPointFromQuickCompiledCodePtrSize(
+          src->IsNative() ? GetQuickGenericJniStub() : GetQuickToInterpreterBridge(),
+          image_pointer_size);
     }
   }
   // Clear the profiling info for the same reasons as the JIT code.
@@ -784,26 +759,16 @@ std::string ArtMethod::PrettyMethod(ArtMethod* m, bool with_signature) {
 }
 
 std::string ArtMethod::PrettyMethod(bool with_signature) {
-  ArtMethod* m = this;
-  if (!m->IsRuntimeMethod()) {
-    m = m->GetInterfaceMethodIfProxy(Runtime::Current()->GetClassLinker()->GetImagePointerSize());
+  if (UNLIKELY(IsRuntimeMethod())) {
+    std::string result = GetDeclaringClassDescriptor();
+    result += '.';
+    result += GetName();
+    // Do not add "<no signature>" even if `with_signature` is true.
+    return result;
   }
-  std::string result(PrettyDescriptor(m->GetDeclaringClassDescriptor()));
-  result += '.';
-  result += m->GetName();
-  if (UNLIKELY(m->IsFastNative())) {
-    result += "!";
-  }
-  if (with_signature) {
-    const Signature signature = m->GetSignature();
-    std::string sig_as_string(signature.ToString());
-    if (signature == Signature::NoSignature()) {
-      return result + sig_as_string;
-    }
-    result = PrettyReturnType(sig_as_string.c_str()) + " " + result +
-        PrettyArguments(sig_as_string.c_str());
-  }
-  return result;
+  ArtMethod* m =
+      GetInterfaceMethodIfProxy(Runtime::Current()->GetClassLinker()->GetImagePointerSize());
+  return m->GetDexFile()->PrettyMethod(m->GetDexMethodIndex(), with_signature);
 }
 
 std::string ArtMethod::JniShortName() {
@@ -833,26 +798,5 @@ ALWAYS_INLINE static inline void DoGetAccessFlagsHelper(ArtMethod* method)
         method->GetDeclaringClass<kReadBarrierOption>()->IsIdxLoaded() ||
         method->GetDeclaringClass<kReadBarrierOption>()->IsErroneous());
 }
-
-template <ReadBarrierOption kReadBarrierOption> void ArtMethod::GetAccessFlagsDCheck() {
-  if (kCheckDeclaringClassState) {
-    Thread* self = Thread::Current();
-    if (!Locks::mutator_lock_->IsSharedHeld(self)) {
-      if (self->IsThreadSuspensionAllowable()) {
-        ScopedObjectAccess soa(self);
-        CHECK(IsRuntimeMethod() ||
-              GetDeclaringClass<kReadBarrierOption>()->IsIdxLoaded() ||
-              GetDeclaringClass<kReadBarrierOption>()->IsErroneous());
-      }
-    } else {
-      // We cannot use SOA in this case. We might be holding the lock, but may not be in the
-      // runnable state (e.g., during GC).
-      Locks::mutator_lock_->AssertSharedHeld(self);
-      DoGetAccessFlagsHelper<kReadBarrierOption>(this);
-    }
-  }
-}
-template void ArtMethod::GetAccessFlagsDCheck<ReadBarrierOption::kWithReadBarrier>();
-template void ArtMethod::GetAccessFlagsDCheck<ReadBarrierOption::kWithoutReadBarrier>();
 
 }  // namespace art
