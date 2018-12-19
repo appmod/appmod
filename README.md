@@ -2,7 +2,7 @@
 This android app enables the interaction between advisees (e.g., elderly seeking help when facing app anomaly) and advisors (e.g., tech-savvy trying to give help.
 
 The app can:
-1. detect malicious behaviors of monitored apps
+1. stimulate malicious behaviors of monitored apps
 2. notify advisees of potentially malicious behaviors
 3. enable advisees to seek help
 4. enable advisors to give help
